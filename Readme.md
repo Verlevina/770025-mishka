@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Вероника Левитина](https://up.htmlacademy.ru/adaptive/15/user/770025).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Котов] (https://htmlacademy.ru/profile/id25083).
 
 ---
 
