@@ -5,8 +5,51 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+  <header class="page-header">
+    <div class="header-wrapper">
+      <a class="page-header__logo-link">
+        <img src="http://placehold.it/86x35" alt="логотип интернет-магазина Мишка" class="page-header__logo-img"
+             width="86" height="35">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a class="site-list__link">Каталог товаров</a></li>
+          <li class="site-list__item"><a href="#" class="site-list__link">Вязание на заказ</a></li>
+        </ul>
+      </nav>
+      <ul class="main-nav__list user-list">
+        <li class="user-list__item"><a href="#">Поиск по сайту</a></li>
+        <li class="user-list__item"><a href="#">Корзина: <span> пока пуста</span></a></li>
+      </ul>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    </div>
+    <main class="page-main">
+      <h1 class="visually-hidden">Интернет - магазин товаров ручной работы "Мишка"</h1>
+      <section class="for-house">
+        <header class="products">
+          <h2>Милые штуки ручной работы для дома</h2>
+          <ul class="product-list products__list">
+            <li class="product-list__item product-list__item--color"><a href="#" class="product-list__link"></a></li>
+            <li class="product-list__item product-list__item--color" ><a href="#" class="product-list__link"></a></li>
+          </ul>
+        </header>
+        <section class="top-product">
+          <h3 class="top-product__header">Вязаные корзинки</h3>
+          <span class="top-product__best">Товар недели</span>
+          <p class="top-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
+            трех размерах.</p>
+          <table class="top-product__options">
+
+          </table>
+        </section>
+      </section>
+    </main>
+
+  </header>
+
+
+
 
   </body>
 </html>
