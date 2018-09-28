@@ -7,15 +7,16 @@
 <body>
 <header class="page-header">
   <div class="header-wrapper">
-    <a class="page-header__logo-link">
+    <a href="index.html" class="page-header__logo-link">
       <img src="http://placehold.it/86x35" alt="логотип интернет-магазина Мишка" class="page-header__logo-img"
            width="86" height="35">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active"><a class="site-list__link">Каталог товаров</a></li>
-        <li class="site-list__item"><a href="#" class="site-list__link">Вязание на заказ</a></li>
+        <li class="site-list__item site-list__item--active"><a href="catalog.html" class="site-list__link">Каталог
+          товаров</a></li>
+        <li class="site-list__item"><a class="site-list__link">Вязание на заказ</a></li>
       </ul>
     </nav>
     <ul class="main-nav__list user-list">
@@ -30,7 +31,57 @@
   <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
     свяжемся с вами, чтобы уточнить детали.</p>
   <section class="form">
+    <h2 class="visually-hidden">Оформление заказа</h2>
+    <form action="https://echo.htmlacademy.ru" method="post" class="order-form">
+      <fieldset class="form__item">
+        <legend class="form_legend">Тип</legend>
+        <input id="interiorAccessory" name="type" type="radio" value="Аксессуар для интерьера" checked> <label
+        for="interiorAccessory">Аксессуар для интерьера</label>
+        <input id="kidsToy" name="type" type="radio" value="Детская игрушка"> <label for="kidsToy">Детская
+        игрушка</label>
+      </fieldset>
+      <fieldset class="form__item">
+        <legend class="form_legend">Цвет</legend>
+        <input type="checkbox" id="colorWhite" name="color" value="Белый">
+        <label for="colorWhite">Белый</label>
+        <input type="checkbox" id="colorGray" name="color" value="Серый">
+        <label for="colorGray">Серый</label>
+        <input type="checkbox" id="colorTiffany" name="color" value="«Тиффани»">
+        <label for="colorTiffany">«Тиффани»</label>
+        <input type="checkbox" id="colorBlack" name="color" value="Черный">
+        <label for="colorBlack">Черный</label>
+        <input type="checkbox" id="colorPink" name="color" value="Розовый">
+        <label for="colorPink">Розовый</label>
+        <input type="checkbox" id="colorOrange" name="color" value="Оранжевый">
+        <label for="colorOrange">Оранжевый</label>
+      </fieldset>
+      <fieldset class="form__item">
+        <legend class="form_legend">ФИО</legend>
+        <label for="formName">Имя:</label><input id="formName" type="text" name="name" placeholder="Введите ваше имя*">
+        <label for="formSurname">Фамилия:</label><input id="formSurname" name="surname" type="text"
+                                                        placeholder="Укажите фамилию*">
+        <label for="formFathername">Отчество:</label><input id="formFathername" name="fathername" type="text"
+                                                            placeholder="Отчество, если желаете">
+      </fieldset>
+      <fieldset class="form__item">
+        <legend class="form_legend">Тел</legend>
+        <input name="tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+      </fieldset>
+      <fieldset class="form__item">
+        <legend class="form_legend">Email</legend>
+        <input name="email" type="email" placeholder="Ваш Email*">
+      </fieldset>
+      <fieldset class="form__item">
+        <legend class="form_legend">Доп</legend>
+        <textarea name="additionalWishes" placeholder="Опишите все ваши
+пожелания к заказу">
 
+        </textarea>
+        <span>*Поля обязательны для заполнения</span>
+
+      </fieldset>
+      <button class="button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+    </form>
 
   </section>
 
