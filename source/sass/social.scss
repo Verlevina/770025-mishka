@@ -1,0 +1,7 @@
+.social {
+  @include reset-list;
+  width: 182px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

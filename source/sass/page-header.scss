@@ -1,0 +1,43 @@
+.page-header {
+  @include flex-center;
+  width: 100%;
+  align-items: stretch;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $light-grey;
+}
+
+.page-header__logo-link {
+  display: inline-block;
+}
+
+.page-header__logo-img {
+  margin: 22px 0 22px 0;
+}
+
+.page-header__list {
+  @include reset-list;
+  @include flex-center;
+}
+
+.page-header__item {
+  display: inline-block;
+  border-bottom: 1px solid $light-grey;
+  text-align: center;
+}
+
+.page-header__link {
+  display: inline-block;
+  padding: 32px 76px 31px 76px;
+  text-decoration: none;
+  text-align: left;
+  color: #000000;
+  min-width: 181px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.41;
+}

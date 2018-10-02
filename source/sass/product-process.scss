@@ -1,0 +1,50 @@
+.production-process {
+
+}
+
+.production-process__title {
+  font-family: "OpenSans", "Arial", sans-serif;
+  padding-left: 57px;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.production-process__video {
+  width: 100%;
+  height: auto;
+  background: $light-grey;
+  position: relative;
+}
+
+.production-process__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+
+  border: none;
+  font-size: 0;
+  background: url("../img/icon-play.svg") no-repeat center center;
+}
+
+.production-process__description {
+  font-family: "OpenSans", "Arial", sans-serif;
+  margin: 34px;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}

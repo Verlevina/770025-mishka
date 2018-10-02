@@ -1,0 +1,16 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+$light-grey: #ececec;
+$seafoam-blue:#63d1bb;
+$grey:#444444;

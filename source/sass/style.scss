@@ -1,3 +1,37 @@
-body {
-  background: red;
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
 }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@import "variables.scss";
+@import "visually-hidden.scss";
+@import "body-page.scss";
+@import "page-header.scss";
+@import "toggle-button.scss";
+@import "main-nav.scss";
+@import "product-list.scss";
+@import "products.scss";
+@import "top-product.scss";
+@import "button.scss";
+@import "about-us.scss";
+@import "reviews.scss";
+@import "reviews-wrapper.scss";
+@import "review.scss";
+@import "review-buttons.scss";
+@import "contacts.scss";
+@import "page-footer.scss";
+@import "social.scss";
+@import "page-main.scss";
+@import "form.scss";
+@import "hide.scss";
+@import "catalog.scss";
+@import "product-process.scss";

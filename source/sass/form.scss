@@ -1,0 +1,92 @@
+.form {
+  margin: 29px;
+}
+
+.form__wrap {
+  border: none;
+  border-top: 1px solid $seafoam-blue;
+  padding: 0;
+}
+
+.form__legend {
+  text-transform: uppercase;
+  padding: 0 27px 0 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.94;
+  letter-spacing: normal;
+  text-align: left;
+  color: $seafoam-blue;
+}
+
+.form__list {
+  @include reset-list;
+}
+
+.form__item {
+  padding: 23px 23px 23px 23px;
+}
+
+.form__textarea {
+  border: 2px solid #000000;
+}
+
+.form__label {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.form__radio + label {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    left: -50px;
+    border: 2px solid $grey;
+    border-radius: 50%;
+  }
+}
+
+.form__radio:checked + label::before {
+  background: radial-gradient($seafoam-blue, $seafoam-blue 30%, transparent 30%, transparent);
+}
+
+.form__checkbox + label {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    left: -50px;
+    border: 2px solid $grey;
+  }
+}
+
+.form__checkbox:checked + label::before {
+  background: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding:17px 1px 17px 1px;
+}
