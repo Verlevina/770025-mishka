@@ -11,8 +11,7 @@
     "gulp-postcss": "8.0.x",
     "gulp-sass": "4.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
-    "gulp": "^3.9.1",
-    "stylelint": "^9.6.0",
+    "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
@@ -37,19 +36,5 @@
   ],
   "engines": {
     "node": "8.12"
-  },
-  "dependencies": {
-    "stylefmt": "^6.0.2"
-  },
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Verlevina/770025-mishka.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Verlevina/770025-mishka/issues"
-  },
-  "homepage": "https://github.com/Verlevina/770025-mishka#readme"
+  }
 }
