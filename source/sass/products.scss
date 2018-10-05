@@ -39,3 +39,23 @@
   background-repeat: no-repeat;
   background-position: 90%, 50%;
 }
+
+@media (min-width: 768px) {
+  .products {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% -60px;
+  }
+  .products__title {
+    font-size: 44px;
+    font-family: "OpenSans", "Arial", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    line-height: 1.163;
+    margin-top: 92px;
+    letter-spacing: 0.047em;
+  }
+
+  .products__list {
+    margin-top: 335px;
+  }
+}

@@ -18,39 +18,18 @@
   margin: 22px 0 22px 0;
 }
 
-.page-header__list {
-
-}
-
-.page-header__item {
-
-}
-
-.page-header__link {
-  display: inline-block;
-  padding: 32px 76px 31px 76px;
-  text-decoration: none;
-  text-align: left;
-  color: #000000;
-  min-width: 181px;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 1.41;
-}
-
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .page-header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
-
+  .page-header__logo {
+    width: 20%;
+  }
   .page-header__link {
-    width: 10%;
-    flex-grow: 0;
-    flex-shrink: 0;
+
   }
 
 }

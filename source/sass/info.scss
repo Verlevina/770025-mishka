@@ -1,0 +1,18 @@
+.info {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .info {
+    display: block;
+    box-sizing: border-box;
+    padding: 22px 5px 17px 25px;
+    text-align: left;
+    letter-spacing: 0.06em;
+    font-family: "OpenSans", "Arial", sans-serif;
+    line-height: normal;
+    font-size: 14px;
+    width: 40%;
+    order: 3;
+  }
+}

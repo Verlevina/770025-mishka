@@ -26,3 +26,22 @@
 .product-list__item--color:nth-child(even) {
   background-color: #56c3b2;
 }
+
+@media (min-width: 768px) {
+  .product-list {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .product-list__item {
+    width: 50%;
+  }
+
+  .product-list__link {
+    padding: 28px 160px 28px 29px;
+    font-size: 22px;
+    letter-spacing: 0.06em;
+  }
+}
