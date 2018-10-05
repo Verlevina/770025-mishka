@@ -1,6 +1,7 @@
 .user-list {
   @include reset-list;
   @include flex-center;
+  display: none;
 }
 
 .user-list__item {
@@ -24,6 +25,7 @@
 
 @media (min-width: 768px) {
   .user-list {
+    display: flex;
     align-items: stretch;
     order: 0;
     border-bottom: 1px solid $light-grey;
