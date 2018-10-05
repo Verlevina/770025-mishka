@@ -16,10 +16,10 @@
   font-style: normal;
   font-stretch: normal;
   line-height: 1.2;
-  letter-spacing: normal;
   text-align: center;
+  letter-spacing: 0.04em;
   color: #000000;
-  margin-top: 34px;
+  margin-top: 27px;
   margin-bottom: 24px;
 
   &--best {
@@ -29,8 +29,8 @@
       position: absolute;
       content: "ТОВАР НЕДЕЛИ";
       text-transform: uppercase;
-      top: 26px;
-      left: -2px;
+      top: 35px;
+      left: -10px;
       color: $seafoam-blue;
       font-family: "OpenSans", "Arial", sans-serif;
       font-size: 17px;
@@ -50,7 +50,7 @@
 
 .top-product__options {
   text-align: left;
-  width: 100%;
+  width: 260px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -61,12 +61,13 @@
 
 .top-product__value {
   width: 98px;
-  padding: 10px;
+  padding: 9px 0 9px 0;
   border-bottom: 1px solid $light-grey;
 }
 
 .top-product__description {
-  margin: 54px 0 54px 0;
+  margin: 24px auto 15px auto;
+  max-width: 260px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -77,10 +78,13 @@
 }
 
 .top-product__field {
+  padding: 9px 5px 9px 0;
   border-bottom: 1px solid $light-grey;
 }
 
 .top-product__prise {
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -89,4 +93,29 @@
   line-height: 1.41;
   letter-spacing: normal;
   color: $grey;
+}
+
+@media (min-width: 768px) {
+  .top-product {
+
+    flex-wrap: wrap;
+  }
+
+  .top-product__title {
+    font-size: 45px;
+    text-align: left;
+    width: 100%;
+    margin-top: 35px;
+    margin-left: 33px;
+
+    &--best {
+      &::before {
+        width: 50px;
+        top: 13px;
+        left: auto;
+        right: 83px;
+        line-height: 1.1;
+      }
+    }
+  }
 }
