@@ -12,6 +12,7 @@
   font-weight: bold;
 }
 
+@import "normalize.scss";
 @import "variables.scss";
 @import "visually-hidden.scss";
 @import "body-page.scss";
@@ -35,3 +36,5 @@
 @import "hide.scss";
 @import "catalog.scss";
 @import "product-process.scss";
+@import "site-list.scss";
+@import "user-list.scss";

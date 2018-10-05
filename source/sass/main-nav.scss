@@ -1,5 +1,6 @@
-.main-nav__toggle {
-  position: absolute;
-  top: 30px;
-  right: 30px;
+
+@media (max-width: 768px) {
+  .main-nav {
+    order: 1;
+  }
 }

@@ -19,14 +19,11 @@
 }
 
 .page-header__list {
-  @include reset-list;
-  @include flex-center;
+
 }
 
 .page-header__item {
-  display: inline-block;
-  border-bottom: 1px solid $light-grey;
-  text-align: center;
+
 }
 
 .page-header__link {
@@ -40,4 +37,20 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+  .page-header__link {
+    width: 10%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
 }

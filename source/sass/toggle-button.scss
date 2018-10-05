@@ -1,4 +1,7 @@
 .toggle-button {
+  position: absolute;
+  top: 32px;
+  right: 30px;
   font-size: 0;
   background: none;
   width: 21px;
@@ -14,4 +17,10 @@
 
 .toggle-button--open {
   background-image: url("../img/icon-menu-open.svg");
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: none;
+  }
 }
