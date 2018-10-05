@@ -28,8 +28,16 @@
   .page-header__logo {
     width: 20%;
   }
-  .page-header__link {
+}
 
+@media (min-width: 1250px) {
+  .page-header {
+    width: 1150px;
+    margin: 0 auto;
   }
 
+  .page-header__logo {
+    order: 1;
+    width: 10%;
+  }
 }

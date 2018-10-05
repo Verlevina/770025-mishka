@@ -37,11 +37,25 @@
 
   .product-list__item {
     width: 50%;
+    min-height: 127px;
   }
 
   .product-list__link {
-    padding: 28px 160px 28px 29px;
+    padding: 28px 160px 28px 35px;
     font-size: 22px;
-    letter-spacing: 0.06em;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    line-height: 30px;
   }
 }
+
+@media (min-width: 1250px) {
+  .product-list__link {
+    padding: 28px 320px 23px 35px;
+  }
+
+  .product-list__item {
+   min-height: 120px;
+  }
+}
+

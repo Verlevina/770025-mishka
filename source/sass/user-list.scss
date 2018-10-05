@@ -84,3 +84,9 @@
     left: 28px;
   }
 }
+@media (min-width: 1250px) {
+  .user-list {
+    order: 2;
+    width: 45%;
+  }
+}
