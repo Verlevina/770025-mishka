@@ -1,0 +1,92 @@
+.top-product {
+  @include flex-center;
+  padding: 0 30px 42px 30px;
+  text-align: center;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.top-product__title {
+  position: relative;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  margin-top: 34px;
+  margin-bottom: 24px;
+
+  &--best {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "ТОВАР НЕДЕЛИ";
+      text-transform: uppercase;
+      top: 26px;
+      left: -2px;
+      color: $seafoam-blue;
+      font-family: "OpenSans", "Arial", sans-serif;
+      font-size: 17px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.18;
+      letter-spacing: normal;
+      text-align: left;
+    }
+  }
+}
+
+.top-product__image {
+  margin-top: 28px;
+}
+
+.top-product__options {
+  text-align: left;
+  width: 100%;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.33;
+  color: $grey;
+}
+
+.top-product__value {
+  width: 98px;
+  padding: 10px;
+  border-bottom: 1px solid $light-grey;
+}
+
+.top-product__description {
+  margin: 54px 0 54px 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+  text-align: left;
+  color: $grey;
+}
+
+.top-product__field {
+  border-bottom: 1px solid $light-grey;
+}
+
+.top-product__prise {
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  color: $grey;
+}

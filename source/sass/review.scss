@@ -1,0 +1,43 @@
+
+.review {
+  width: 100%;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  color: $grey;
+  letter-spacing: normal;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.review__autor-name {
+  order: 1;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.review__description {
+  order: 0;
+  margin-bottom: 40px;
+}
+
+.review__email {
+  order: 2;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 1.76;
+  color: #444444;
+}

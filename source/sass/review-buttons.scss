@@ -1,0 +1,27 @@
+.review-buttons {
+
+  display: flex;
+  flex-direction: row;
+  width: 260px;
+}
+
+.review-buttons__button {
+  width: 50%;
+  height: 52px;
+  font-size: 0;
+  background: transparent;
+  border: 1px solid $light-grey;
+  background-repeat: no-repeat;
+}
+
+.review-buttons__button--left {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-position: 50% 50%;
+}
+
+.review-buttons__button--right {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-position: 50% 50%;
+  transform: rotate(180deg);
+  margin-left: -2px;
+}

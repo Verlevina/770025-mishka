@@ -2,80 +2,93 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/style.css" rel="stylesheet">
   <title>HTML Academy: Мишка</title>
 </head>
-<body>
+<body class="page-body">
 <header class="page-header">
-  <div class="header-wrapper">
+  <div class="page-header__logo">
     <a class="page-header__logo-link" href="index.html">
-      <img class="page-header__logo-img" src="http://placehold.it/86x35" alt="логотип интернет-магазина Мишка" width="86" height="35">
+      <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="логотип интернет-магазина Мишка" width="86" height="35">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">Вязание на заказ</a>
-        </li>
-      </ul>
-    </nav>
-    <ul class="main-nav__list user-list">
-      <li class="user-list__item">
-        <a href="#">Поиск по сайту</a>
+  </div>
+  <nav class="main-nav">
+    <button class="toggle-button main-nav__toggle toggle-button--close toggle-button--open" type="button">Открыть меню
+
+    </button>
+    <ul class="page-header__list main-nav__list site-list hide">
+      <li class="page-header__item site-list__item site-list__item--active">
+        <a  class="page-header__link">Каталог товаров</a>
       </li>
-      <li class="user-list__item">
-        <a href="#">Корзина: <span> пока пуста</span></a>
+      <li class="page-header__item site-list__item">
+        <a class="page-header__link" href="form.html">Вязание на заказ</a>
       </li>
     </ul>
-  </div>
+  </nav>
+  <ul class="page-header__list main-nav__list user-list hide">
+    <li class="page-header__item user-list__item">
+      <a class="page-header__link page-header__search" href="#">Поиск по сайту</a>
+    </li>
+    <li class="page-header__item user-list__item">
+      <a class="page-header__link page-header__search" href="#">Корзина: <span> пока пуста</span></a>
+    </li>
+  </ul>
 </header>
 <main class="page-main">
   <h1 class="page-main__title">Каталог товаров</h1>
   <section class="catalog">
     <ul class="catalog__list">
       <li class="catalog__item">
-        <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" class="catalog__image" width="240" height="195">
+        <img src="./img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" class="catalog__image" width="260" height="195">
         <h3 class="catalog__title">Зайчик-попрыгайчик</h3>
         <span class="catalog__description">Рост 30 см, вес 200 г</span>
         <p class="catalog__price">1200 руб.</p>
       </li>
       <li class="catalog__item">
-        <img class="catalog__image" src="http://placehold.it/260x195" alt="Корзинка для белья" width="260" height="195">
+        <img src="./img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
         <h3 class="catalog__title">Корзинка для белья</h3>
-        <span class="catalog__description">Диаметр 15 см, высота 10 см</span>
+        <span class="catalog__description">Диаметр 15 см, высота 10 см </span>
         <p class="catalog__price">690 руб.</p>
       </li>
       <li class="catalog__item">
-        <img class="catalog__image" src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" width="260" height="195">
+        <img class="catalog__image" src="./img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
         <h3 class="catalog__title">Большая корзинка для игрушек</h3>
         <span class="catalog__description">Диаметр 30 см, высота 30 см</span>
         <p class="catalog__price">1500 руб.</p>
       </li>
     </ul>
   </section>
-  <section class="production-process">
+  <section class="production-process catalog__item">
     <h3 class="production-process__title">Процесс производства</h3>
     <div class="production-process__video">
+      <img src="./img/video-mobile@1x.jpg" alt="HTML academy" width="260" height="150">
       <button class="production-process__play-button" type="button">Play</button>
     </div>
     <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
       том, как появляются наши товары.</p>
     <a class="button production-process__button" href="form.html">Сделать заказ</a>
   </section>
-
   <footer class="page-footer">
     <ul class="social">
-      <li class="social__item social__item--inst">Instagram</li>
-      <li class="social__item--facebook">Facebook</li>
-      <li class="social__item--twitter">Twitter</li>
+      <li class="social__item social__item--inst">
+        <img src="./img/icon-insta.svg" alt="Instagram" width="22" height="21">
+      </li>
+      <li class="social__item--facebook">
+        <img src="./img/icon-fb.svg" alt="Facebook" width="15" height="28">
+      </li>
+      <li class="social__item--twitter">
+        <img src="./img/icon-twitter.svg" alt="Twitter" width="23" height="20">
+      </li>
     </ul>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="./img/htmlacademy.svg" alt="HTML academy" width="27" height="34">
+      </a>
     </div>
   </footer>
 </main>
+<script src="js/main.js"></script>
 </body>
 </html>

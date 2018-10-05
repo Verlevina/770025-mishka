@@ -1,0 +1,27 @@
+.product-list {
+  @include reset-list;
+}
+
+.product-list__item {
+  @include flex-center;
+  background-color: $seafoam-blue;
+  color: #ffffff;
+}
+
+.product-list__link {
+  min-height: 103px;
+  box-sizing: border-box;
+  display: block;
+  padding: 30px 160px 30px 29px;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: left;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.26;
+}
+
+.product-list__item--color:nth-child(even) {
+  background-color: #56c3b2;
+}

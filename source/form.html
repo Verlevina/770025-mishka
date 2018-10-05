@@ -2,117 +2,129 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/style.css" rel="stylesheet">
   <title>HTML Academy: Мишка</title>
 </head>
-<body>
+<body class="page-body">
 <header class="page-header">
-  <div class="header-wrapper">
-    <a href="index.html" class="page-header__logo-link">
-      <img src="http://placehold.it/86x35" alt="логотип интернет-магазина Мишка" class="page-header__logo-img" width="86" height="35">
+  <div class="page-header__logo">
+    <a class="page-header__logo-link" href="index.html">
+      <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="логотип интернет-магазина Мишка" width="86" height="35">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link">Вязание на заказ</a>
-        </li>
-      </ul>
-    </nav>
-    <ul class="main-nav__list user-list">
-      <li class="user-list__item"><a href="#">Поиск по сайту</a></li>
-      <li class="user-list__item"><a href="#">Корзина: <span> пока пуста</span></a></li>
-    </ul>
-
   </div>
+  <nav class="main-nav">
+    <button class="toggle-button main-nav__toggle toggle-button--close toggle-button--open" type="button">Открыть меню
+
+    </button>
+    <ul class="page-header__list main-nav__list site-list hide">
+      <li class="page-header__item site-list__item site-list__item--active">
+        <a  class="page-header__link" href="catalog.html">Каталог товаров</a>
+      </li>
+      <li class="page-header__item site-list__item">
+        <a class="page-header__link">Вязание на заказ</a>
+      </li>
+    </ul>
+  </nav>
+  <ul class="page-header__list main-nav__list user-list hide">
+    <li class="page-header__item user-list__item">
+      <a class="page-header__link page-header__search" href="#">Поиск по сайту</a>
+    </li>
+    <li class="page-header__item user-list__item">
+      <a class="page-header__link page-header__search" href="#">Корзина: <span> пока пуста</span></a>
+    </li>
+  </ul>
 </header>
+
 <main class="page-main">
   <h1 class="page-main__title">Вязание на заказ</h1>
-  <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+  <p class="page-main__description">
+    Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+  </p>
   <section class="form">
-    <h2 class="visually-hidden">Оформление заказа</h2>
+    <h2 class="visually-hide">Оформление заказа</h2>
     <form action="https://echo.htmlacademy.ru" method="post" class="order-form">
-      <fieldset class="form__item">
-        <legend class="form_legend">Тип</legend>
+      <fieldset class="form__wrap">
+        <legend class="form__legend">Тип</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="hidden" id="interiorAccessory" name="type" type="radio" value="Аксессуар для интерьера" checked>
-            <label class="form__radio" for="interiorAccessory">Аксессуар для интерьера</label>
+            <input class="hide form__radio" id="interiorAccessory" name="type" type="radio" value="Аксессуар для интерьера" checked>
+            <label class=" form__label" for="interiorAccessory">Аксессуар для интерьера</label>
           </li>
           <li class="form__item">
-            <input class="hidden" id="kidsToy" name="type" type="radio" value="Детская игрушка">
-            <label class="form__radio" for="kidsToy">Детская игрушка</label>
+            <input class="hide form__radio" id="kidsToy" name="type" type="radio" value="Детская игрушка">
+            <label class=" form__label" for="kidsToy">Детская игрушка</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__item">
+      <fieldset class="form__wrap">
         <legend class="form__legend">Цвет</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="hidden" type="checkbox" id="colorWhite" name="color" value="Белый">
-            <label class="form__checkbox" for="colorWhite">Белый</label>
+            <input class="hide form__checkbox" type="checkbox" id="colorWhite" name="color" value="Белый">
+            <label class="form__checkbox form__label" for="colorWhite">Белый</label>
           </li>
           <li class="form__item">
-            <input class="hidden" type="checkbox" id="colorGray" name="color" value="Серый">
-            <label class="form__checkbox" for="colorGray">Серый</label>
+            <input class="hide form__checkbox" type="checkbox" id="colorGray" name="color" value="Серый">
+            <label class="form__checkbox form__label" for="colorGray">Серый</label>
           </li>
 
           <li class="form__item">
-            <input class="hidden" type="checkbox" id="colorTiffany" name="color" value="«Тиффани»">
-            <label class="form__checkbox" for="colorTiffany">«Тиффани»</label>
-          </li>
-          <li class="form__item"><input type="checkbox" id="colorBlack" name="color" value="Черный">
-            <label for="colorBlack">Черный</label>
+            <input class="hide form__checkbox" type="checkbox" id="colorTiffany" name="color" value="«Тиффани»">
+            <label class=" form__label" for="colorTiffany">«Тиффани»</label>
           </li>
           <li class="form__item">
-            <input class="hidden" type="checkbox" id="colorPink" name="color" value="Розовый">
-            <label class="form__checkbox" for="colorPink">Розовый</label>
+            <input class="hide form__checkbox" type="checkbox" id="colorBlack" name="color" value="Черный">
+            <label  class=" form__label" for="colorBlack">Черный</label>
           </li>
           <li class="form__item">
-            <input class="hidden" type="checkbox" id="colorOrange" name="color" value="Оранжевый">
-            <label class="form__checkbox" for="colorOrange">Оранжевый</label>
+            <input class="hide form__checkbox" type="checkbox" id="colorPink" name="color" value="Розовый">
+            <label class=" form__label" for="colorPink">Розовый</label>
+          </li>
+          <li class="form__item">
+            <input class="hide form__checkbox" type="checkbox" id="colorOrange" name="color" value="Оранжевый">
+            <label class=" form__label" for="colorOrange">Оранжевый</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__item">
-        <legend class="form_legend">ФИО</legend>
+      <fieldset class="form__wrap">
+        <legend class="form__legend">ФИО</legend>
         <ul class="form__list">
           <li class="form__item">
-            <label class="form__name-label" for="formName">Имя:</label>
-            <input class="form__input" id="formName" type="text" name="name" placeholder="Введите ваше имя*"></li>
-          <li class="form__item">
-            <label class="form__name-label" for="formSurname">Фамилия:</label>
-            <input class="form__input" id="formSurname" name="surname" type="text" placeholder="Укажите фамилию*">
+            <label class="form__label" for="formName">Имя:</label><br>
+            <input class="form__input" id="formName" type="text" name="name" placeholder="Введите ваше имя*" required>
           </li>
           <li class="form__item">
-            <label class="form__name-label" for="formFathername">Отчество:</label>
+            <label class="form__label" for="formSurname">Фамилия:</label><br>
+            <input class="form__input" id="formSurname" name="surname" type="text" placeholder="Укажите фамилию*" required>
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="formFathername">Отчество:</label><br>
             <input class="form__input" id="formFathername" name="fathername" type="text" placeholder="Отчество, если желаете">
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__item">
-        <legend class="form_legend">Тел</legend>
+      <fieldset class="form__wrap">
+        <legend class="form__legend">Тел</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="form__input form__input--tel" name="tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <input class="form__input form__input--tel" name="tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__item">
-        <legend class="form_legend">Email</legend>
+      <fieldset class="form__wrap">
+        <legend class="form__legend">Email</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="form__input form__input--mail" name="email" type="email" placeholder="Ваш Email*">
+            <input class="form__input form__input--mail" name="email" type="email" placeholder="Ваш Email*" required>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__item">
-        <legend class="form_legend">Доп</legend>
+      <fieldset class="form__wrap">
+        <legend class="form__legend">Доп</legend>
         <ul class="form__list">
           <li class="form__item">
-            <textarea name="additionalWishes" placeholder="Опишите все ваши пожелания к заказу">
+            <textarea class="form__textarea" name="additionalWishes" placeholder="Опишите все ваши пожелания к заказу">
             </textarea>
           </li>
         </ul>
@@ -124,15 +136,24 @@
 
   <footer class="page-footer">
     <ul class="social">
-      <li class="social__item social__item--inst">Instagram</li>
-      <li class="social__item--facebook">Facebook</li>
-      <li class="social__item--twitter">Twitter</li>
+      <li class="social__item social__item--inst">
+        <img src="./img/icon-insta.svg" alt="Instagram" width="22" height="21">
+      </li>
+      <li class="social__item--facebook">
+        <img src="./img/icon-fb.svg" alt="Facebook" width="15" height="28">
+      </li>
+      <li class="social__item--twitter">
+        <img src="./img/icon-twitter.svg" alt="Twitter" width="23" height="20">
+      </li>
     </ul>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="./img/htmlacademy.svg" alt="HTML academy" width="27" height="34">
+      </a>
     </div>
   </footer>
 </main>
+<script src="js/main.js"></script>
 </body>
 </html>
