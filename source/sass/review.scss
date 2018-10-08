@@ -15,6 +15,7 @@
 }
 
 .review__autor-name {
+  margin-top: 12px;
   order: 1;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
@@ -33,6 +34,7 @@
 }
 
 .review__email {
+  margin-top: 2px;
   order: 2;
   text-decoration: none;
   font-weight: normal;
@@ -40,4 +42,12 @@
   font-size: 17px;
   line-height: 1.76;
   color: #444444;
+}
+
+.review-buttons {
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+
 }

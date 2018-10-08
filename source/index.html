@@ -63,10 +63,12 @@
         </li>
       </ul>
     </header>
-    <section class="top-product">
+    <div class="top-product center">
       <h3 class="top-product__title top-product__title--best">
         <span class="">Вязаные корзинки</span>
       </h3>
+      <div class="top-product__wrap">
+      <div class="top-product__wrap-top">
       <p class="top-product__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
       </p>
@@ -96,45 +98,52 @@
           </td>
         </tr>
       </table>
+      </div>
+
+        <div class="top-product__image-wrap">
       <img class="top-product__image" src="./img/triple-set-mobile@1x.jpg" alt="фото вязаных корзиночек" width="260" height="315">
-      <p class="top-product__prise">
+        </div>
+      <div class="top-product__wrap-bottom">
+          <p class="top-product__prise">
+
         Цена: <span>990</span> руб.
       </p>
       <a  class="button top-product__button" href="#">Заказать</a>
+      </div>
+    </div>
     </section>
   </section>
-  <section class="about-us">
+  <section class="about-us center">
     <h2 class="about-us__title">Коротко о нас:</h2>
     <ul class="about-us__list ">
       <li class="about-us__item about-us__item--flower">
         <img src="./img/icon-feature-flower.svg" height="37" width="32">
-        <p>Экологически чистые материалы</p>
+        <p class="about-us__description">Экологически чистые материалы</p>
       </li>
       <li class="about-us__item about-us__item--money">
         <img src="./img/icon-feature-flower.svg" height="37" width="32">
-        <p>Скандинавский стиль по российской цене</p>
+        <p class="about-us__description">Скандинавский стиль по российской цене</p>
       </li>
       <li class="about-us__item about-us__item--heart">
         <img src="./img/icon-feature-flower.svg" height="37" width="32">
-        <p>Увеличивает лайки на фотографиях</p>
+        <p class="about-us__description">Увеличивает лайки на фотографиях</p>
       </li>
       <li class="about-us__item about-us__item--clew">
         <img src="./img/icon-feature-flower.svg" height="37" width="32">
-        <p>Связано вручную с любовью и умилением</p>
+        <p class="about-us__description">Связано вручную с любовью и умилением</p>
       </li>
       <li class="about-us__item about-us__item--rocket">
         <img src="./img/icon-feature-flower.svg" height="37" width="32">
-        <p>Поддержка отечественного производителя</p>
+        <p class="about-us__description">Поддержка отечественного производителя</p>
       </li>
       <li class="about-us__item about-us__item--present">
         <img src="./img/icon-feature-flower.svg" height="37" width="32">
-        <p>Поставляется в подарочной упаковке</p>
+        <p class="about-us__description">Поставляется в подарочной упаковке</p>
       </li>
     </ul>
   </section>
   <section class="reviews">
     <h2 class="reviews__title">Отзывы</h2>
-    <div class="reviews-wrapper slider  reviews__main">
       <blockquote class="review reviews__item slider__item">
         <cite class="review__autor-name reviews__author-name">
           Анастасия Красильникова
@@ -143,14 +152,15 @@
         <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко такого
           количества
           лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии
-          сразу стали более стильными, а также набирают больше лайков!</p>
+          сразу стали более стильными, а также набирают больше лайков! Ещё немного текста для верстки</p>
       </blockquote>
-      <div class="review-buttons reviews__button">
+      <div class="review-buttons reviews__buttons">
       <button class="review-buttons__button review-buttons__button--left" type="button">Назад</button>
       <button class="review-buttons__button review-buttons__button--right" type="button">Вперед</button>
     </div>
+    <div class="reviews__button-wrap">
+      <a class="button reviews__button">Написать</a>
     </div>
-    <a class="button reviews__button">Написать</a>
   </section>
   <section class="contacts">
     <h3 class="contacts__title">Контакты</h3>

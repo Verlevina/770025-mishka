@@ -1,5 +1,5 @@
 .about-us {
-  padding: 34px 30px 45px 30px;
+  padding: 14px 30px 15px 30px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-position: bottom;
   background-repeat: repeat-x;
@@ -15,6 +15,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #000000;
+  margin-top: 9px;
 }
 
 .about-us__list {
@@ -23,7 +24,7 @@
 
 .about-us__item {
   position: relative;
-  margin-top: 65px;
+  margin-top: 25px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -33,4 +34,66 @@
   letter-spacing: normal;
   text-align: left;
   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    background: none;
+  }
+  .about-us__title {
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+
+  .about-us__list {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    width: 50%;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .about-us__description {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .about-us {
+    background: none;
+  }
+
+  .about-us__title {
+    margin-left: 170px;
+    font-size: 55px;
+  }
+
+  .about-us__list {
+    margin-top: 28px;
+    margin-left: 100px;
+    flex-direction: column;
+    height: 500px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  .about-us__item {
+    width: 290px;
+    margin-left: 60px;
+    margin-right: 0;
+  }
+
+  .about-us__description {
+    width: 300px;
+  }
 }
