@@ -264,6 +264,10 @@
     justify-content: space-around;
     align-items: center;
   }
+
+  .form__list--name br {
+    display: none;
+  }
 }
 
 @media (min-width: 1250px) {
