@@ -40,8 +40,9 @@
   .about-us {
     background: none;
   }
+
   .about-us__title {
-    margin-top: 35px;
+    margin-top: 25px;
     margin-left: 15px;
     font-size: 45px;
     margin-bottom: 10px;
@@ -69,6 +70,7 @@
 
 @media (min-width: 1250px) {
   .about-us {
+    padding-top: 24px;
     background: none;
   }
 

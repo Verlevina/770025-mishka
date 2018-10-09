@@ -5,17 +5,7 @@
 }
 
 .page-header__logo {
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid $light-grey;
-}
-
-.page-header__logo-link {
-  display: inline-block;
-}
-
-.page-header__logo-img {
-  margin: 22px 0 22px 0;
+  text-align: center;
 }
 
 @media (min-width: 768px) {

@@ -9,16 +9,17 @@
 <body class="page-body">
 <header class="page-header">
   <div class="page-header__logo">
-    <a href="index.html" class="page-header__logo-link">
-      <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="логотип интернет-магазина Мишка" width="86" height="35">
+    <a class="logo page-header__logo-link">
+      <img class="logo__img page-header__logo-img" src="img/logo-mobile.svg" alt="логотип интернет-магазина Мишка" width="86" height="35">
     </a>
   </div>
   <nav class="main-nav">
-    <button class="toggle-button main-nav__toggle toggle-button--close toggle-button--open" type="button">Открыть меню
+    <button class="toggle-button main-nav__toggle toggle-button--close toggle-button--open" type="button">
+      Открыть меню
     </button>
     <ul class="page-header__list main-nav__list site-list hide">
       <li class="page-header__item site-list__item site-list__item--active">
-        <a  class="site-list__link" href="catalog.html">Каталог товаров</a>
+        <a class="site-list__link" href="catalog.html">Каталог товаров</a>
       </li>
       <li class="page-header__item site-list__item">
         <a class="site-list__link">Вязание на заказ</a>
@@ -27,7 +28,7 @@
   </nav>
   <ul class="offers">
     <li class="offers__item">
-      <a  class="offers__link" href="#">Новые поступления</a>
+      <a class="offers__link" href="#">Новые поступления</a>
     </li>
     <li class="offers__item">
       <a class="offers__link" href="#">Распродажа</a>
@@ -45,53 +46,78 @@
 </header>
 
 <main class="page-main">
-  <h1 class="page-main__title">Вязание на заказ</h1>
-  <p class="page-main__description">
-    Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+  <h1 class="page-main__title page-main__title--form">Вязание на заказ</h1>
+  <p class="page-main__description page-main__description--form center">
+    Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
+    детали.
   </p>
   <section class="form">
-    <h2 class="visually-hide">Оформление заказа</h2>
+    <h2 class="visually-hidden">Оформление заказа</h2>
     <form action="https://echo.htmlacademy.ru" method="post" class="order-form">
       <fieldset class="form__wrap">
         <legend class="form__legend">Тип</legend>
         <ul class="form__list">
           <li class="form__item">
-            <input class="hide form__radio" id="interiorAccessory" name="type" type="radio" value="Аксессуар для интерьера" checked>
-            <label class=" form__label" for="interiorAccessory">Аксессуар для интерьера</label>
+            <input class="hidden form__radio" id="interiorAccessory" name="type" type="radio" value="Аксессуар для интерьера" checked>
+            <label class=" form__label" for="interiorAccessory">
+              <span class="form__label-text">Аксессуар для интерьера</span>
+            </label>
           </li>
           <li class="form__item">
-            <input class="hide form__radio" id="kidsToy" name="type" type="radio" value="Детская игрушка">
-            <label class=" form__label" for="kidsToy">Детская игрушка</label>
+            <input class="hidden form__radio" id="kidsToy" name="type" type="radio" value="Детская игрушка">
+            <label class=" form__label" for="kidsToy">
+              <span class="form__label-text">Детская игрушка</span>
+            </label>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__wrap">
         <legend class="form__legend">Цвет</legend>
         <ul class="form__list">
-          <li class="form__item">
-            <input class="hide form__checkbox" type="checkbox" id="colorWhite" name="color" value="Белый">
-            <label class="form__checkbox form__label" for="colorWhite">Белый</label>
+          <li class="form__item form__item--checkbox">
+            <input class="hidden form__checkbox" type="checkbox" id="colorWhite" name="color" value="Белый">
+            <label class="form__checkbox form__label" for="colorWhite">
+              <span class="form__label-text">Белый
+              </span>
+            </label>
           </li>
-          <li class="form__item">
-            <input class="hide form__checkbox" type="checkbox" id="colorGray" name="color" value="Серый">
-            <label class="form__checkbox form__label" for="colorGray">Серый</label>
+          <li class="form__item form__item--checkbox">
+            <input class="hidden form__checkbox" type="checkbox" id="colorGray" name="color" value="Серый">
+            <label class="form__checkbox form__label" for="colorGray">
+              <span class="form__label-text">Серый
+              </span>
+            </label>
           </li>
-
-          <li class="form__item">
-            <input class="hide form__checkbox" type="checkbox" id="colorTiffany" name="color" value="«Тиффани»">
-            <label class=" form__label" for="colorTiffany">«Тиффани»</label>
+          <li class="form__item form__item--checkbox">
+            <input class="hidden form__checkbox" type="checkbox" id="colorTiffany" name="color" value="«Тиффани»">
+            <label class=" form__label" for="colorTiffany">
+              <span class="form__label-text">«Тиффани»
+              </span>
+            </label>
           </li>
-          <li class="form__item">
-            <input class="hide form__checkbox" type="checkbox" id="colorBlack" name="color" value="Черный">
-            <label  class=" form__label" for="colorBlack">Черный</label>
+          <li class="form__item form__item--checkbox">
+            <input class="hidden form__checkbox" type="checkbox" id="colorBlack" name="color" value="Черный">
+            <label class=" form__label" for="colorBlack">
+              <span class="form__label-text">
+                Черный
+              </span>
+            </label>
           </li>
-          <li class="form__item">
-            <input class="hide form__checkbox" type="checkbox" id="colorPink" name="color" value="Розовый">
-            <label class=" form__label" for="colorPink">Розовый</label>
+          <li class="form__item form__item--checkbox">
+            <input class="hidden form__checkbox" type="checkbox" id="colorPink" name="color" value="Розовый">
+            <label class=" form__label" for="colorPink">
+              <span class="form__label-text">
+                Розовый
+              </span>
+            </label>
           </li>
-          <li class="form__item">
-            <input class="hide form__checkbox" type="checkbox" id="colorOrange" name="color" value="Оранжевый">
-            <label class=" form__label" for="colorOrange">Оранжевый</label>
+          <li class="form__item form__item--checkbox">
+            <input class="hidden form__checkbox" type="checkbox" id="colorOrange" name="color" value="Оранжевый">
+            <label class=" form__label" for="colorOrange">
+              <span class="form__label-text">
+                Оранжевый
+              </span>
+            </label>
           </li>
         </ul>
       </fieldset>

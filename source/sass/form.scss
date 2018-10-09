@@ -1,11 +1,12 @@
 .form {
-  margin: 29px;
+  margin: 16px;
 }
 
 .form__wrap {
   border: none;
   border-top: 1px solid $seafoam-blue;
   padding: 0;
+  margin-left: 0;
 }
 
 .form__legend {
@@ -24,10 +25,12 @@
 
 .form__list {
   @include reset-list;
+  margin-top: 24px;
+  margin-bottom: 23px;
 }
 
 .form__item {
-  padding: 23px 23px 23px 23px;
+  padding: 0 23px 10px 0;
 }
 
 .form__textarea {
@@ -35,27 +38,39 @@
 }
 
 .form__label {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.06;
+  line-height: 20px;
   letter-spacing: normal;
   text-align: left;
   color: #000000;
 }
 
+.form__label-text {
+  margin-left: 20px;
+  margin-top: 10px;
+  line-height: 20px;
+  width: 150px;
+  font-size: 16px;
+  display: inline-block;
+}
+
 .form__radio + label {
-  position: relative;
+  line-height: 30px;
+  vertical-align: center;
 
   &::before {
     content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: -15px;
-    left: -50px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
     border: 2px solid $grey;
     border-radius: 50%;
   }
@@ -66,15 +81,14 @@
 }
 
 .form__checkbox + label {
-  position: relative;
+  line-height: 30px;
+  vertical-align: center;
 
   &::before {
     content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: -15px;
-    left: -50px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
     border: 2px solid $grey;
   }
 }
@@ -89,4 +103,8 @@
   border: none;
   border-bottom: 2px solid #000000;
   padding: 17px 1px 17px 1px;
+}
+
+.form__item--checkbox {
+  margin-bottom: 12px;
 }

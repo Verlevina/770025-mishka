@@ -9,13 +9,13 @@
 <body class="page-body">
 <header class="page-header">
   <div class="page-header__logo">
-    <a class="page-header__logo-link">
-      <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="логотип интернет-магазина Мишка" width="86" height="35">
+    <a class="logo page-header__logo-link">
+      <img class="logo__img page-header__logo-img" src="img/logo-mobile.svg" alt="логотип интернет-магазина Мишка" width="86" height="35">
     </a>
   </div>
     <nav class="main-nav">
-      <button class="toggle-button main-nav__toggle toggle-button--close toggle-button--open" type="button">Открыть меню
-
+      <button class="toggle-button main-nav__toggle toggle-button--close toggle-button--open" type="button">
+        Открыть меню
       </button>
       <ul class="page-header__list main-nav__list site-list hide">
         <li class="page-header__item site-list__item site-list__item--active">
@@ -63,7 +63,7 @@
         </li>
       </ul>
     </header>
-    <div class="top-product center">
+    <section class="top-product center">
       <h3 class="top-product__title top-product__title--best">
         <span class="">Вязаные корзинки</span>
       </h3>
@@ -162,21 +162,23 @@
       <a class="button reviews__button">Написать</a>
     </div>
   </section>
-  <section class="contacts">
+  <section class="contacts center">
+    <div class="contacts__wrap-top">
     <h3 class="contacts__title">Контакты</h3>
+
     <div class="contacts__email">
-      <span class="contacts__description">e-mail:</span>
+      <span class="contacts__description-title">e-mail:</span>
       <a class="contacts__description" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
     </div>
       <div class="contacts__adress">
-        <span class="contacts__description">адрес:</span>
+        <span class="contacts__description-title">адрес:</span>
         <p class="contacts__description">
           г. Санкт-Петербург,
           ул. Большая Конюшенная,
           д. 19/8, офис 101
         </p>
       </div>
-
+    </div>
     <div class="contacts__map">
       <button class="contacts__label" type="button">
         флаг
@@ -186,7 +188,11 @@
   </section>
 </main>
 
-<footer class="page-footer">
+<footer class="page-footer-wrap">
+  <div class="page-footer center">
+  <a class="page-footer__logo-link">
+    <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="логотип интернет-магазина Мишка" width="86" height="35">
+  </a>
   <ul class="social">
     <li class="social__item social__item--inst">
       <img src="./img/icon-insta.svg" alt="Instagram" width="22" height="21">
@@ -203,6 +209,7 @@
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
       <img src="./img/htmlacademy.svg" alt="HTML academy" width="27" height="34">
     </a>
+  </div>
   </div>
 </footer>
 <script src="js/main.js"></script>
