@@ -73,7 +73,7 @@
       </fieldset>
       <fieldset class="form__wrap">
         <legend class="form__legend">Цвет</legend>
-        <ul class="form__list">
+        <ul class="form__list form__list--color">
           <li class="form__item form__item--checkbox">
             <input class="hidden form__checkbox" type="checkbox" id="colorWhite" name="color" value="Белый">
             <label class="form__checkbox form__label" for="colorWhite">
@@ -162,12 +162,13 @@
             </textarea>
           </li>
         </ul>
-        <span>*Поля обязательны для заполнения</span>
       </fieldset>
-      <button class="button form__button" type="submit">Отправить заказ</button>
+      <div class="form__bottom-wrap">
+        <span>*Поля обязательны для заполнения</span>
+        <button class="button form__button" type="submit">Отправить заказ</button>
+      </div>
     </form>
   </section>
-
   <footer class="page-footer">
     <ul class="social">
       <li class="social__item social__item--inst">
