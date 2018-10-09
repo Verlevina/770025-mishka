@@ -1,18 +1,20 @@
 @font-face {
-  font-family: "Open Sans";
+  font-family: "OpenSans";
   src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "OpenSans";
   src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
   font-style: normal;
   font-weight: bold;
 }
 
+@import "normalize.scss";
 @import "variables.scss";
+@import "center.scss";
 @import "visually-hidden.scss";
 @import "body-page.scss";
 @import "page-header.scss";
@@ -32,6 +34,13 @@
 @import "social.scss";
 @import "page-main.scss";
 @import "form.scss";
-@import "hide.scss";
 @import "catalog.scss";
 @import "product-process.scss";
+@import "site-list.scss";
+@import "user-list.scss";
+@import "info.scss";
+@import "logo.scss";
+@import "for-house.scss";
+@import "offers.scss";
+@import "catalog-item.scss";
+@import "hidden.scss";

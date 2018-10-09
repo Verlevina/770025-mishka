@@ -45,3 +45,17 @@
   text-align: left;
   color: #444444;
 }
+
+@media (min-width: 768px) {
+  .production-process__button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1250px) {
+  .product-process__description-wrap {
+    border: 1px solid $light-grey;
+    margin-bottom: 40px;
+  }
+}

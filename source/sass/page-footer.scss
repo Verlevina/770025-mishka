@@ -4,3 +4,30 @@
   flex-direction: column;
   align-items: center;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer-wrap {
+  background: $light-grey;
+  width: 100%;
+}
+
+.page-footer__logo-link {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .page-footer__logo-link {
+    display: block;
+  }
+}

@@ -1,5 +1,5 @@
 .page-main__title {
-  padding: 76px 37px 80px 38px;
+  padding: 66px 37px 77px 38px;
   width: 100%;
   box-sizing: border-box;
   background: $light-grey;
@@ -32,4 +32,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.page-main__title--form {
+  padding-bottom: 48px;
+}
+
+.page-main__description--form {
+  margin-top: 21px;
+  margin-bottom: 10px;
 }

@@ -1,5 +1,14 @@
-.main-nav__toggle {
-  position: absolute;
-  top: 30px;
-  right: 30px;
+
+@media (min-width: 768px) {
+  .main-nav {
+    order: 1;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1250px) {
+  .main-nav {
+    order: 0;
+    width: 45%;
+  }
 }
