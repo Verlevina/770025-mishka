@@ -123,7 +123,7 @@
       </fieldset>
       <fieldset class="form__wrap">
         <legend class="form__legend">ФИО</legend>
-        <ul class="form__list">
+        <ul class="form__list form__list--name">
           <li class="form__item">
             <label class="form__label" for="formName">Имя:</label><br>
             <input class="form__input" id="formName" type="text" name="name" placeholder="Введите ваше имя*" required>
@@ -140,7 +140,7 @@
       </fieldset>
       <fieldset class="form__wrap">
         <legend class="form__legend">Тел</legend>
-        <ul class="form__list">
+        <ul class="form__list form__list--name form__list--tel">
           <li class="form__item">
             <input class="form__input form__input--tel" name="tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </li>
@@ -148,7 +148,7 @@
       </fieldset>
       <fieldset class="form__wrap">
         <legend class="form__legend">Email</legend>
-        <ul class="form__list">
+        <ul class="form__list form__list--name form__list--tel">
           <li class="form__item">
             <input class="form__input form__input--mail" name="email" type="email" placeholder="Ваш Email*" required>
           </li>
@@ -156,7 +156,7 @@
       </fieldset>
       <fieldset class="form__wrap">
         <legend class="form__legend">Доп</legend>
-        <ul class="form__list">
+        <ul class="form__list form__list--name form__list--textarea">
           <li class="form__item">
             <textarea class="form__textarea" name="additionalWishes" placeholder="Опишите все ваши пожелания к заказу">
             </textarea>
@@ -164,7 +164,7 @@
         </ul>
         <span>*Поля обязательны для заполнения</span>
       </fieldset>
-      <button class="button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+      <button class="button form__button" type="submit">Отправить заказ</button>
     </form>
   </section>
 
