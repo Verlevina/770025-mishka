@@ -1,6 +1,6 @@
 .top-product {
   @include flex-center;
-  padding: 0 30px 42px 30px;
+  padding: 0 20px 42px 20px;
   text-align: center;
   background-image: url("../img/bg-zigzag-line.svg");
   background-position: bottom;
@@ -49,6 +49,7 @@
 }
 
 .top-product__options {
+  margin: 0 auto;
   text-align: left;
   width: 260px;
   font-family: "OpenSans", "Arial", sans-serif;

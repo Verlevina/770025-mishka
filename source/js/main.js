@@ -1,6 +1,7 @@
 ;(function(){
   var button = document.querySelector(".toggle-button");
   var mobileMenu = document.querySelectorAll(".page-header__list");
+
   var onToggleButtonCloseClick = function() {
     mobileMenu.forEach(function (it) {
       it.style = "";

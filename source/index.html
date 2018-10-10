@@ -13,11 +13,11 @@
       <img class="logo__img page-header__logo-img" src="img/logo-mobile.svg" alt="логотип интернет-магазина Мишка" width="86" height="35">
     </a>
   </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--no-js">
       <button class="toggle-button main-nav__toggle toggle-button--close toggle-button--open" type="button">
-        Открыть меню
+       <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="page-header__list main-nav__list site-list hide">
+      <ul class="page-header__list main-nav__list site-list">
         <li class="page-header__item site-list__item site-list__item--active">
           <a  class="site-list__link" href="catalog.html">Каталог товаров</a>
         </li>
@@ -28,13 +28,13 @@
     </nav>
   <ul class="offers">
     <li class="offers__item">
-      <a  class="offers__link" href="#">Новые поступления</a>
+      <a class="offers__link" href="#">Новые поступления</a>
     </li>
     <li class="offers__item">
       <a class="offers__link" href="#">Распродажа</a>
     </li>
   </ul>
-    <ul class="page-header__list main-nav__list user-list hide">
+    <ul class="page-header__list user-list">
       <li class="page-header__item user-list__item">
         <a class="user-list__link page-header__search user-list__link user-list__search" href="#">Поиск по сайту</a>
       </li>
@@ -159,7 +159,7 @@
       <button class="review-buttons__button review-buttons__button--right" type="button">Вперед</button>
     </div>
     <div class="reviews__button-wrap">
-      <a class="button reviews__button">Написать</a>
+      <a class="button reviews__button" href="#">Написать</a>
     </div>
   </section>
   <section class="contacts center">
@@ -205,13 +205,42 @@
     </li>
   </ul>
   <div class="page-footer__copyright copyright">
-    <b class="copyright__text">Разработано:</b>
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+    <b class="copyright__text">Разработано:</b>
       <img src="./img/htmlacademy.svg" alt="HTML academy" width="27" height="34">
     </a>
   </div>
   </div>
 </footer>
+<section class="popup">
+  <h2 class="popup__title">
+    Добавить в корзину
+  </h2>
+  <span>Выберите размер</span>
+  <form action="https://echo.htmlacademy.ru" method="post">
+  <ul class="popup__list">
+    <li class="popup__item">
+      <input class="hidden popup__radio" id="popupSizeS" type="radio" name="size" value="S" checked>
+      <label for="popupSizeS">
+      S
+    </label>
+    </li>
+    <li class="popup__item">
+      <input class="hidden popup__radio" id="popupSizeM" type="radio" name="size" value="M">
+      <label for="popupSizeM">
+      M
+    </label>
+    </li>
+    <li class="popup__item">
+      <input class="hidden popup__radio" id="popupSizeL" type="radio" name="size" value="L">
+      <label for="popupSizeL">
+      L
+    </label>
+    </li>
+  </ul>
+    <button class="button popup__button" type="submit">добавить</button>
+  </form>
+</section>
 <script src="js/main.js"></script>
 </body>
 </html>
