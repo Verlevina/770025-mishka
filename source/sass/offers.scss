@@ -2,6 +2,21 @@
  display: none;
 }
 
+.offers__link {
+  &[href] {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+
 @media (min-width: 1250px) {
   .offers {
     @include reset-list;

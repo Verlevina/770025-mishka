@@ -15,4 +15,13 @@
   letter-spacing: normal;
   color: $grey;
   background: transparent;
+
+  &:hover {
+    background: $grey;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(256, 256, 256, 0.3);
+  }
 }

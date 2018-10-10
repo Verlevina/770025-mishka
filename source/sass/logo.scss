@@ -7,4 +7,16 @@
 .logo {
   display: inline-block;
   margin: 22px auto 22px auto;
+
+  &[href] {
+    cursor: pointer;
+  }
+}
+
+.logo[href]:hover {
+  opacity: 0.6;
+}
+
+.logo[href]:active {
+  opacity: 0.3;
 }

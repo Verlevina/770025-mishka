@@ -1,17 +1,22 @@
 .product-list {
   @include reset-list;
+  align-items: flex-end;
 }
 
 .product-list__item {
   background-color: $seafoam-blue;
   color: #ffffff;
+
+  &:hover{
+    margin-bottom: 5px;
+  }
 }
 
 .product-list__link {
   height: 104px;
   box-sizing: border-box;
   display: block;
-  padding: 28px 160px 28px 29px;
+  padding: 28px 160px 48px 29px;
   text-decoration: none;
   color: #ffffff;
   text-align: left;
@@ -21,6 +26,10 @@
   vertical-align: middle;
   font-size: 19px;
   font-weight: bold;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product-list__item--color:nth-child(even) {
@@ -37,7 +46,6 @@
 
   .product-list__item {
     width: 50%;
-    min-height: 127px;
   }
 
   .product-list__link {
@@ -54,7 +62,4 @@
     padding: 28px 320px 23px 35px;
   }
 
-  .product-list__item {
-    min-height: 120px;
-  }
 }

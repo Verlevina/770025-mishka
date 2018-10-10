@@ -21,7 +21,20 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
+
+  &[href] {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
+
 
 @media (min-width: 768px) {
   .user-list {

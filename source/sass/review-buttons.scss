@@ -1,5 +1,4 @@
 .review-buttons {
-
   display: flex;
   flex-direction: row;
   width: 260px;
@@ -12,6 +11,14 @@
   background: transparent;
   border: 1px solid $light-grey;
   background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .review-buttons__button--left {
