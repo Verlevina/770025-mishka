@@ -106,18 +106,19 @@
 
 @media (min-width: 1250px) {
   .about-us {
-    padding-top: 24px;
+    padding-top: 35px;
     background: none;
   }
 
   .about-us__title {
-    margin-left: 170px;
-    font-size: 55px;
+    margin-left: 186px;
+    font-size: 52px;
   }
 
   .about-us__list {
     margin-top: 28px;
-    margin-left: 100px;
+    margin-left: 116px;
+    padding-bottom: 10px;
     flex-direction: row;
     height: 500px;
     align-items: flex-start;

@@ -8,8 +8,18 @@
 }
 
 @media (min-width: 1250px) {
+  .catalog {
+    margin-top: 89px;
+    width: 1050px;
+  }
+
+
   .catalog__list {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 27px;
+    justify-content: space-between;
   }
+
 }

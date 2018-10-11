@@ -69,10 +69,14 @@
   .catalog-item {
     display: block;
     width: 316px;
+    margin-left: 0;
+    margin-right: 0;
+
   }
 
   .catalog-item__description-wrap {
     width: 100%;
     box-sizing: border-box;
+    flex-grow: 1;
   }
 }

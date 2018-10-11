@@ -1,5 +1,5 @@
 .page-main__title {
-  padding: 66px 37px 77px 38px;
+  padding: 70px 37px 77px 38px;
   width: 100%;
   box-sizing: border-box;
   background: $light-grey;
@@ -41,4 +41,11 @@
 .page-main__description--form {
   margin-top: 21px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 1250px) {
+  .page-main__title {
+    padding: 35px 37px 99px 38px;
+    font-size: 53px;
+  }
 }

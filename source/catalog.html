@@ -7,19 +7,20 @@
   <title>HTML Academy: Мишка</title>
 </head>
 <body class="page-body">
-<header class="page-header">
+<body class="page-body">
+<header class="page-header no-js">
   <div class="page-header__logo">
-    <a class="logo page-header__logo-link" href="index.html">
+    <a class="logo page-header__logo-link">
       <img class="logo__img page-header__logo-img" src="img/logo-mobile.svg" alt="логотип интернет-магазина Мишка" width="86" height="35">
     </a>
   </div>
   <nav class="main-nav">
-    <button class="toggle-button main-nav__toggle toggle-button--close toggle-button--open" type="button">Открыть меню
-
+    <button class="toggle-button main-nav__toggle toggle-button--close toggle-button--open" type="button">
+      <span class="visually-hidden">Открыть меню</span>
     </button>
-    <ul class="page-header__list main-nav__list site-list hide">
+    <ul class="page-header__list main-nav__list site-list">
       <li class="page-header__item site-list__item site-list__item--active">
-        <a class="site-list__link">Каталог товаров</a>
+        <a  class="site-list__link" href="catalog.html">Каталог товаров</a>
       </li>
       <li class="page-header__item site-list__item">
         <a class="site-list__link" href="form.html">Вязание на заказ</a>
@@ -34,7 +35,7 @@
       <a class="offers__link" href="#">Распродажа</a>
     </li>
   </ul>
-  <ul class="page-header__list main-nav__list user-list hide">
+  <ul class="page-header__list main-nav__list user-list">
     <li class="page-header__item user-list__item">
       <a class="user-list__link page-header__search user-list__link user-list__search" href="#">Поиск по сайту</a>
     </li>

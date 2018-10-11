@@ -59,11 +59,13 @@
 
 @media (min-width: 1250px) {
   .products__title {
-    font-size: 55px;
+    font-size: 53px;
     line-height: 58px;
+    letter-spacing: 0.02em;
   }
 
   .products {
+    min-height: 688px;
     position: relative;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-position: 50% -60px;

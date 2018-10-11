@@ -32,3 +32,20 @@
   transform: rotate(180deg);
   margin-left: -2px;
 }
+
+@media (min-width: 768px) {
+  .review-buttons {
+    justify-content: center;
+    width: 201px;
+  }
+
+  .review-buttons__button {
+    border: none;
+    background-size: 53px;
+    width: 55px;
+    margin-top: 2px;
+    align-items: flex-start;
+    margin-right: 25px;
+    margin-left: 10px;
+  }
+}

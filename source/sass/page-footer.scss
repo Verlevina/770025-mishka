@@ -38,3 +38,13 @@
     display: block;
   }
 }
+@media (min-width: 768px) {
+  .page-footer {
+    margin-top: 0;
+    justify-content: space-between;
+  }
+
+  .page-footer-wrap {
+    margin-top: 0;
+  }
+}
