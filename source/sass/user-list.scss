@@ -63,10 +63,10 @@
   }
 
   .user-list__link {
-    font-size: 18px;
+    font-size: 17px;
     min-width: auto;
     letter-spacing: 0.01em;
-    padding: 32px 50px 32px 82px;
+    padding: 32px 49px 34px 82px;
     position: relative;
     flex-grow: 0;
     flex-shrink: 0;
@@ -90,6 +90,7 @@
     width: 83px;
     padding: 0;
     height: 100%;
+    border-left: 1px solid $light-grey;
   }
 
   .user-list__search::before {

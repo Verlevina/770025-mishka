@@ -36,8 +36,8 @@
 
 @media (min-width: 768px) {
   .reviews {
-    padding-top: 55px;
-    padding-left: 50px;
+    padding-top: 53px;
+    padding-left: 45px;
     flex-wrap: wrap;
     margin: auto;
     flex-direction: row;
@@ -48,7 +48,7 @@
 
   .reviews__title {
     order: 0;
-    font-size: 45px;
+    font-size: 43px;
     width: 50%;
   }
 
@@ -84,7 +84,9 @@
   }
 
   .reviews__description {
-    margin-bottom: 45px;
+    margin: 13px 13px 47px 4px;
+    font-size: 17px;
+    line-height: 1.8em;
   }
 }
 

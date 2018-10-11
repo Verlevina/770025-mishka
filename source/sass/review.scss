@@ -47,3 +47,9 @@
 .review-buttons {
   margin-top: 15px;
 }
+
+@media (min-width: 768px) {
+  .review__autor-name {
+     letter-spacing: 0.06em;
+  }
+}

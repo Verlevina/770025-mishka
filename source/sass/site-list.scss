@@ -47,10 +47,11 @@
   }
 
   .site-list__link {
-    padding: 19px 19px 19px 19px;
-    font-size: 16px;
+    padding: 19px 16px 19px 19px;
+    font-size: 15px;
     width: auto;
     min-width: auto;
+    letter-spacing: 0.01em;
   }
 
   .site-list__item:first-child a {

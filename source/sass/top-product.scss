@@ -9,17 +9,18 @@
 }
 
 .top-product__title {
+  align-self: flex-start;
+  margin-left: 10px;
   position: relative;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 25px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.04em;
-  color: #000000;
-  margin-top: 27px;
+  line-height: 1.111;
+  color: $black;
+  margin-top: 29px;
   margin-bottom: 24px;
 
   &--best {
@@ -30,7 +31,7 @@
       content: "ТОВАР НЕДЕЛИ";
       text-transform: uppercase;
       top: 35px;
-      left: -10px;
+      left: 0;
       color: $seafoam-blue;
       font-family: "OpenSans", "Arial", sans-serif;
       font-size: 17px;
@@ -61,13 +62,13 @@
 }
 
 .top-product__value {
-  width: 98px;
+  width: 92px;
   padding: 9px 0 9px 0;
   border-bottom: 1px solid $light-grey;
 }
 
 .top-product__description {
-  margin: 24px auto 15px auto;
+  margin: 24px auto 18px auto;
   max-width: 260px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
@@ -84,7 +85,7 @@
 }
 
 .top-product__prise {
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 25px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
@@ -100,22 +101,36 @@
   .top-product {
     flex-wrap: wrap;
     flex-direction: row;
+    width: 679px;
+    padding-bottom: 30px;
+  }
+
+  .top-product__description {
+    margin: 28px 0 34px 5px;
+    line-height: 1.8;
+    font-size: 17px;
+    max-width: 300px;
+  }
+
+  .top-product__options {
+    margin: 0;
   }
 
   .top-product__title {
-    font-size: 45px;
+    font-size: 43px;
     text-align: left;
     width: 100%;
-    margin-top: 35px;
-    margin-left: 33px;
+    margin-top: 37px;
+    margin-left: 2px;
 
     &--best {
       &::before {
-        width: 50px;
-        top: 13px;
+        width: 72px;
+        top: 10px;
         left: auto;
-        right: 83px;
+        right: 32px;
         line-height: 1.1;
+        text-align: center;
       }
     }
   }
@@ -123,7 +138,8 @@
   .top-product__wrap-bottom {
     order: 2;
     position: relative;
-    top: -30px;
+    top: -36px;
+    width: 296px;
   }
 
   .top-product__wrap-top {
@@ -144,6 +160,19 @@
     flex-shrink: 0;
     flex-basis: 50%;
     display: flex;
+  }
+
+  .top-product__value {
+    width: 98px;
+  }
+
+  .top-product__button {
+    width: 100%;
+    margin-top: 31px;
+  }
+
+  .top-product__prise {
+    font-size: 21px;
   }
 }
 

@@ -1,9 +1,5 @@
 .about-us {
-  padding: 14px 30px 15px 30px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: contain;
+  padding: 17px 30px 2px 30px;
 }
 
 .about-us__title {
@@ -20,6 +16,13 @@
 
 .about-us__list {
   @include reset-list;
+  margin-top: 30px;
+}
+
+.about-us__svg-wrapper {
+  width: 46px;
+  height: 34px;
+  text-align: center;
 }
 
 .about-us__item {
@@ -34,11 +37,18 @@
   letter-spacing: normal;
   text-align: left;
   color: #000000;
+  padding-right: 11px;
+  margin-bottom: 33px;
+}
+
+.about-us__item path {
+  fill: $seafoam-blue;
 }
 
 @media (min-width: 768px) {
   .about-us {
     background: none;
+    padding: 23px 30px 0 0;
   }
 
   .about-us__item--flower {
@@ -48,6 +58,7 @@
   .about-us__item--money {
     order: 2;
   }
+
   .about-us__item--heart {
     order: 4;
   }
@@ -67,8 +78,8 @@
   .about-us__title {
     margin-top: 25px;
     margin-left: 15px;
-    font-size: 45px;
-    margin-bottom: 10px;
+    font-size: 43px;
+    margin-bottom: 37px;
   }
 
   .about-us__list {
@@ -85,6 +96,7 @@
     padding: 15px;
     margin-bottom: 0;
     margin-top: 0;
+    padding-bottom: 27px;
   }
 
   .about-us__description {
