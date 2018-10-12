@@ -55,6 +55,8 @@
   margin-top: 27px;
   width: 170px;
   box-sizing: border-box;
+  text-decoration: none;
+  color: $grey;
 }
 
 .contacts__description--mail {
@@ -148,8 +150,6 @@
     margin-top: 37px;
     width: 250px;
     box-sizing: border-box;
-    text-decoration: none;
-    color: $grey;
 
     span {
       border-bottom: 1px solid $seafoam-blue;
