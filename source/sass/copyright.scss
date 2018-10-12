@@ -17,4 +17,9 @@
   justify-content: space-between;
   align-items: center;
   width: 188px;
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
 }
