@@ -46,6 +46,12 @@
 }
 
 @media (min-width: 768px) {
+  .page-main__title {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: center bottom;
+    background-size: auto;
+    background-repeat: repeat-x;
+  }
   .page-main__description--form {
     padding: 0 37px 3px 38px;
     font-size: 17px;
@@ -64,8 +70,8 @@
   }
 
   .page-main__description--form {
-    padding-left: 25px;
     width: 733px;
-    margin-top: 123px;
+    padding-top: 50px;
+    margin-left: 50px;
   }
 }

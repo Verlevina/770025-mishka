@@ -362,9 +362,12 @@
   }
 }
 
+
 @media (min-width: 1250px) {
   .form__list--color li {
     width: 33%;
   }
-
+  .form__list {
+    margin-left: 19.4%;
+  }
 }
