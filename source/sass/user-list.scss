@@ -4,6 +4,25 @@
   display: none;
 }
 
+//
+//.user-list__item {
+//  display: inline-block;
+//  border-bottom: 1px solid $grey;
+//  text-align: center;
+//  width: 100%;
+//}
+//
+//.user-list__link {
+//  display: inline-block;
+//  padding: 32px 10px 31px 10px;
+//  text-decoration: none;
+//  text-align: left;
+//  color: #000000;
+//  min-width: 181px;
+//  font-family: "OpenSans", "Arial", sans-serif;
+//  font-size: 17px;
+//  font-weight: bold;
+//  line-height: 1.41;
 .user-list__item {
   display: inline-block;
   border-bottom: 1px solid $light-grey;
@@ -61,6 +80,7 @@
     border: none;
     border-left: 1px solid $light-grey;
     padding: 0;
+    width: auto;
   }
 
   .user-list__link {

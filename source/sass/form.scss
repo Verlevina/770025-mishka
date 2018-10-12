@@ -125,7 +125,7 @@
   margin-top: 30px;
 }
 
-.form__list--name li {
+.form__item--name {
   padding-bottom: 10px;
   margin-bottom: 7px;
   padding-right: 0;
@@ -140,7 +140,7 @@
   margin-top: 0;
 }
 
-.form__list--tel input {
+.form__input--tel {
   margin-top: 23px;
 }
 
@@ -156,7 +156,7 @@
   margin-bottom: 0;
 }
 
-.form__list--textarea li {
+.form__item--textarea {
   margin-bottom: 12px;
   padding-bottom: 0;
   padding-right: 5px;
@@ -173,9 +173,9 @@
   }
 
   .page-main__description--form {
-    margin-top: 80px;
+    margin-top: 73px;
     line-height: 30px;
-    padding-left: 10px;
+    padding-left: 14px;
     padding-right: 10px;
     box-sizing: border-box;
   }
@@ -196,7 +196,7 @@
   .form__list {
     width: 70%;
     box-sizing: border-box;
-    margin-left: 29%;
+    margin-left: 28%;
     margin-top: 15px;
     margin-bottom: 19px;
     display: flex;
@@ -207,7 +207,7 @@
 
   .form__item {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
     box-sizing: border-box;
   }
 
@@ -220,8 +220,29 @@
     }
   }
 
+
   .form__label-text {
+    margin-left: 32px;
+    margin-top: 13px;
+    line-height: 20px;
+    font-size: 19px;
     width: 100%;
+  }
+
+  .form__input {
+    width: auto;
+    flex-grow: 1;
+    margin-right: 35px;
+  }
+
+  .form__list--name {
+    margin-top: 50px;
+    margin-bottom: 3px;
+  }
+
+  .form__list--name label {
+    font-size: 19px;
+    margin-right: 28px;
   }
 
   .form__radio + label {
@@ -231,19 +252,19 @@
 
     &::before {
       flex-shrink: 0;
-      width: 45px;
-      height: 45px;
+      width: 50px;
+      height: 50px;
     }
   }
 
   .form__list--color {
     flex-direction: row;
-    margin-top: 35px;
-    margin-bottom: 9px;
+    margin-top: 43px;
+    margin-bottom: 29px;
   }
 
   .form__list--color li {
-    width: 50%;
+    width: 49%;
   }
 
   .form__checkbox + label {
@@ -253,8 +274,8 @@
 
     &::before {
       flex-shrink: 0;
-      width: 45px;
-      height: 45px;
+      width: 50px;
+      height: 50px;
     }
   }
 
@@ -268,10 +289,82 @@
   .form__list--name br {
     display: none;
   }
+
+  .form__item--name {
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  .form__list--tel {
+    margin-top: 38px;
+  }
+
+  .form__input--tel {
+    width: 100%;
+  }
+
+  .form__list--mail {
+    margin-top: 8px;
+    margin-bottom: 29px;
+  }
+
+  .form__input--mail {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    width: 100%;
+    padding-left: 18px;
+    box-sizing: border-box;
+  }
+
+  .form__wrap--mail {
+    background-color: $light-grey;
+    margin-top: -8px;
+  }
+
+  .form__wrap.form__wrap--add {
+    background-color: #ffffff;
+  }
+
+  .form__list--textarea {
+    margin-top: 36px;
+  }
+
+  .form__item--textarea {
+    padding-right: 35px;
+  }
+
+  .form__textarea {
+    box-sizing: border-box;
+    height: 141px;
+  }
+
+  .form__bottom-wrap {
+    padding-top: 4px;
+    width: 668px;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .form__bottom-wrap span {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.76;
+    letter-spacing: normal;
+    text-align: right;
+  }
+
+  .form__button {
+    width: 230px;
+  }
 }
 
 @media (min-width: 1250px) {
   .form__list--color li {
     width: 33%;
   }
+
 }

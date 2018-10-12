@@ -45,9 +45,27 @@
   margin-bottom: 10px;
 }
 
+@media (min-width: 768px) {
+  .page-main__description--form {
+    padding: 0 37px 3px 38px;
+    font-size: 17px;
+    margin-top: 70px;
+  }
+}
+
 @media (min-width: 1250px) {
   .page-main__title {
-    padding: 35px 37px 99px 38px;
+    padding: 35px 37px 14px 38px;
     font-size: 53px;
+  }
+
+  .page-main__title--form {
+    padding-bottom: 100px;
+  }
+
+  .page-main__description--form {
+    padding-left: 25px;
+    width: 733px;
+    margin-top: 123px;
   }
 }

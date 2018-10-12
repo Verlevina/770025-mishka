@@ -124,15 +124,15 @@
       <fieldset class="form__wrap">
         <legend class="form__legend">ФИО</legend>
         <ul class="form__list form__list--name">
-          <li class="form__item">
+          <li class="form__item form__item--name">
             <label class="form__label" for="formName">Имя:</label><br>
             <input class="form__input" id="formName" type="text" name="name" placeholder="Введите ваше имя*" required>
           </li>
-          <li class="form__item">
+          <li class="form__item form__item--name">
             <label class="form__label" for="formSurname">Фамилия:</label><br>
             <input class="form__input" id="formSurname" name="surname" type="text" placeholder="Укажите фамилию*" required>
           </li>
-          <li class="form__item">
+          <li class="form__item form__item--name">
             <label class="form__label" for="formFathername">Отчество:</label><br>
             <input class="form__input" id="formFathername" name="fathername" type="text" placeholder="Отчество, если желаете">
           </li>
@@ -146,18 +146,18 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__wrap">
+      <fieldset class="form__wrap form__wrap--mail">
         <legend class="form__legend">Email</legend>
-        <ul class="form__list form__list--name form__list--tel">
+        <ul class="form__list form__list--mail">
           <li class="form__item">
             <input class="form__input form__input--mail" name="email" type="email" placeholder="Ваш Email*" required>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__wrap">
+      <fieldset class="form__wrap form__wrap--add">
         <legend class="form__legend">Доп</legend>
         <ul class="form__list form__list--name form__list--textarea">
-          <li class="form__item">
+          <li class="form__item form__item--textarea">
             <textarea class="form__textarea" name="additionalWishes" placeholder="Опишите все ваши пожелания к заказу">
             </textarea>
           </li>
@@ -170,30 +170,30 @@
     </form>
   </section>
 </main>
-  <footer class="page-footer-wrap">
-    <div class="page-footer center">
-      <a class="page-footer__logo-link">
-        <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="логотип интернет-магазина Мишка" width="86" height="35">
-      </a>
-      <ul class="social">
-        <li class="social__item social__item--inst">
-          <img src="./img/icon-insta.svg" alt="Instagram" width="22" height="21">
-        </li>
-        <li class="social__item--facebook">
-          <img src="./img/icon-fb.svg" alt="Facebook" width="15" height="28">
-        </li>
-        <li class="social__item--twitter">
-          <img src="./img/icon-twitter.svg" alt="Twitter" width="23" height="20">
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
+<footer class="page-footer-wrap">
+  <div class="page-footer center">
+    <a class="page-footer__logo-link">
+      <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="логотип интернет-магазина Мишка" width="86" height="35">
+    </a>
+    <ul class="social">
+      <li class="social__item social__item--inst">
+        <img src="./img/icon-insta.svg" alt="Instagram" width="22" height="21">
+      </li>
+      <li class="social__item--facebook">
+        <img src="./img/icon-fb.svg" alt="Facebook" width="15" height="28">
+      </li>
+      <li class="social__item--twitter">
+        <img src="./img/icon-twitter.svg" alt="Twitter" width="23" height="20">
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="./img/htmlacademy.svg" alt="HTML academy" width="27" height="34">
-        </a>
-      </div>
+        <img src="./img/htmlacademy.svg" alt="HTML academy" width="40" height="50">
+      </a>
     </div>
-  </footer>
+  </div>
+</footer>
   <script src="js/main.js"></script>
 </body>
 </html>
