@@ -7,6 +7,11 @@
   margin: 15px 0 15px 0;
 }
 
+@media (min-width: 768px) {
+  .catalog {
+    margin-top: 27px;
+  }
+}
 @media (min-width: 1250px) {
   .catalog {
     margin-top: 89px;

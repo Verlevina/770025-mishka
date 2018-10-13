@@ -1,7 +1,15 @@
 
+.production-process {
+  margin-bottom: 20px;
+  margin-top: 2px;
+}
+
+.production-process__description-wrap {
+  padding-bottom: 15px;
+}
+
 .production-process__title {
   font-family: "OpenSans", "Arial", sans-serif;
-  padding-left: 57px;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
@@ -10,6 +18,9 @@
   letter-spacing: normal;
   text-align: left;
   color: #000000;
+  padding-left: 88px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 .production-process__video {
@@ -42,6 +53,12 @@
   }
 }
 
+.production-process__button {
+  margin: 0 auto;
+  width: 192px;
+  margin-bottom: 16px;
+}
+
 .production-process__description {
   font-family: "OpenSans", "Arial", sans-serif;
   margin: 34px;
@@ -53,6 +70,8 @@
   letter-spacing: normal;
   text-align: left;
   color: #444444;
+  margin-top: 23px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 768px) {

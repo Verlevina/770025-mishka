@@ -199,14 +199,23 @@
     padding-bottom: 0;
   }
 
+  .contacts__description {
+    margin-left: 26px;
+    line-height: 1.8;
+  }
+
   .contacts__email {
     padding-left: 174px;
     width: 100%;
+    line-height: 1.8;
+    margin-bottom: -7px;
+    font-size: 17px;
   }
 
   .contacts__adress {
     padding-left: 174px;
     width: 100%;
+    font-size: 17px;
   }
 
   .contacts__title {
