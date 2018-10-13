@@ -28,7 +28,7 @@
 
 .about-us__item {
   position: relative;
-  margin-top: 25px;
+  margin-top: 33px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -38,7 +38,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #000000;
-  padding-right: 11px;
+  padding-right: 0;
   margin-bottom: 33px;
 }
 
@@ -108,7 +108,7 @@
 
 @media (min-width: 1250px) {
   .about-us {
-    padding-top: 35px;
+    padding-top: 31px;
     background: none;
   }
 
@@ -132,6 +132,7 @@
     width: 290px;
     margin-left: 60px;
     margin-right: 0;
+    padding-left: 9px;
   }
 
   .about-us__description {

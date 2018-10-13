@@ -20,3 +20,24 @@
 .logo[href]:active {
   opacity: 0.3;
 }
+
+@media (min-width: 768px) {
+  .logo__img {
+    margin-left: 47px;
+  }
+
+  .logo {
+    margin: 22px auto 15px auto;
+  }
+}
+
+@media (min-width: 1250px) {
+  .logo__img {
+    margin-left: 0;
+    border-bottom: none;
+  }
+
+  .logo {
+    margin: 8px auto 0 auto;
+  }
+}

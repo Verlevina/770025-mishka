@@ -6,7 +6,7 @@
 }
 
 .reviews__title {
-  margin-top: 20px;
+  margin-top: 17px;
   margin-bottom: 10px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 25px;
@@ -36,12 +36,12 @@
 
 @media (min-width: 768px) {
   .reviews {
-    padding-top: 53px;
     padding-left: 45px;
     flex-wrap: wrap;
     margin: auto;
+    margin-top: 38px;
     flex-direction: row;
-    margin-top: 34px;
+    padding-top: 59px;
     padding-bottom: 50px;
     background: url("../img/review@1x.jpg") no-repeat, url("../img/bg-zigzag-line.svg") no-repeat bottom;
   }
@@ -55,7 +55,7 @@
   .reviews__button-wrap {
     order: 1;
     width: 50%;
-    padding-top: 24px;
+    padding-top: 19px;
     text-align: right;
   }
 
@@ -71,7 +71,7 @@
 
   .reviews__item {
     order: 2;
-    margin-top: 20px;
+    margin-top: 21px;
     padding-right: 30px;
     margin-bottom: 20px;
   }
@@ -92,7 +92,7 @@
 
 @media (min-width: 1250px) {
   .reviews {
-    padding-top: 45px;
+    padding-top: 48px;
     max-width: 1250px;
     box-sizing: border-box;
     padding-left: 270px;
@@ -106,7 +106,7 @@
   }
 
   .reviews__button-wrap {
-    padding-top: 32px;
+    padding-top: 27px;
   }
 
   .reviews__button {
