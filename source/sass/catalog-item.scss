@@ -131,5 +131,24 @@
     width: 100%;
     box-sizing: border-box;
     flex-grow: 1;
+    min-height: 191px;
+  }
+
+  .catalog-item__description {
+    margin-bottom: 0;
+  }
+
+  .catalog-item__image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .catalog-item__title {
+    margin-top: 20px;
+  }
+
+  .catalog-item__price {
+    padding-left: 0;
+    margin-bottom: 26px;
   }
 }

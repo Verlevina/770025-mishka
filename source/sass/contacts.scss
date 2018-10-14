@@ -125,7 +125,6 @@
     background-position-x: right;
     padding-right: 0;
     margin-right: 19px;
-
   }
 
   .contacts__map {
@@ -142,6 +141,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 700px;
   }
 
   .contacts__description {
@@ -178,11 +178,6 @@
     box-sizing: border-box;
     line-height: 1.9;
     padding: 0 36px 0 5px;
-  }
-
-
-  .contacts__wrap-top {
-    width: 700px;
   }
 
   .contacts__description--mail {

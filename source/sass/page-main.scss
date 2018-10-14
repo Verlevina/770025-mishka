@@ -35,9 +35,8 @@
 }
 
 .page-main__title--form {
-  padding-top: 36px;
-  font-size: 43px;
-  padding-bottom: 81px;
+  font-size: 27px;
+  padding: 70px 20px 77px 20px;
 }
 
 .page-main__description--form {
@@ -70,18 +69,23 @@
   .page-main__description--form {
     padding: 0 37px 3px 38px;
     font-size: 17px;
-    margin-top: 70px;
+    margin-top: 51px;
+    line-height: 30px;
+    padding-left: 14px;
+    padding-right: 10px;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: 1250px) {
   .page-main__title {
-    padding: 35px 37px 14px 38px;
+    padding: 35px 37px 119px 38px;
     font-size: 53px;
   }
 
   .page-main__title--form {
-    padding-bottom: 100px;
+    padding-top: 35px;
+    padding-bottom: 119px;
   }
 
   .page-main__description--form {
