@@ -235,6 +235,7 @@
 
   .form__fieldset-wrap {
     display: flex;
+    align-items: baseline;
   }
 
   .order-form {
@@ -417,6 +418,21 @@
 
   .form__button {
     width: 230px;
+  }
+
+  .form__legeng--type {
+    margin-top: 46px;
+    align-self: flex-start;
+  }
+
+  .form__legeng--color {
+    align-self: flex-start;
+    margin-top: 66px;
+  }
+
+  .form__legeng--add {
+    align-self: flex-start;
+    margin-top: 68px;
   }
 }
 
