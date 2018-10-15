@@ -41,7 +41,8 @@
 
   &:active,
   &:focus {
-    span, svg {
+    span,
+    svg {
       opacity: 0.3;
     }
   }
