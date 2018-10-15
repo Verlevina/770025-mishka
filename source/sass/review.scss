@@ -16,6 +16,8 @@
 
 .review__autor-name {
   margin-top: 12px;
+  margin-left: 0;
+  margin-right: auto;
   order: 1;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
@@ -35,6 +37,8 @@
 
 .review__email {
   margin-top: 2px;
+  margin-left: 0;
+  margin-right: auto;
   order: 2;
   text-decoration: none;
   font-weight: normal;
@@ -51,17 +55,29 @@
 @media (min-width: 768px) {
   .review__autor-name {
     letter-spacing: 0.06em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .review__email {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .review__autor-name {
     font-size: 16px;
     margin-top: 17px;
     margin-left: 3px;
   }
 
+  .review__email {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .review-buttons {
-    margin-right: 50px;
+    margin-right: 29px;
   }
 }

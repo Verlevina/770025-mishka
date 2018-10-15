@@ -140,7 +140,7 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .catalog-item {
     display: block;
     width: 316px;
@@ -153,6 +153,10 @@
     box-sizing: border-box;
     flex-grow: 1;
     min-height: 191px;
+  }
+
+  .catalog-item__title {
+    margin-top: 20px;
   }
 
   .catalog-item__description {

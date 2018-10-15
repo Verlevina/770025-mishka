@@ -5,6 +5,7 @@
   flex-direction: column;
   background: url("../img/bg-zigzag-line.svg") repeat-x 5px bottom;
   background-size: 325px;
+  width: 260px;
 }
 
 .reviews__title {
@@ -36,17 +37,31 @@
   margin-top: 38px;
 }
 
+.reviews__button-wrap {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reviews__buttons {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (min-width: 768px) {
   .reviews {
+    box-sizing: border-box;
+    width: 100%;
     padding-left: 45px;
     flex-wrap: wrap;
     margin: auto;
     margin-top: 38px;
     flex-direction: row;
     padding-top: 59px;
-    padding-bottom: 50px;
     background: url("../img/review@1x.jpg") no-repeat, url("../img/bg-zigzag-line.svg") repeat-x 14px bottom;
     background-size: auto, 778px;
+    padding-bottom: 44px;
+    margin-bottom: 5px;
+
   }
 
   .reviews__title {
@@ -81,6 +96,7 @@
 
   .reviews__buttons {
     margin-left: auto;
+    margin-right: 0;
     position: relative;
     top: -90px;
     order: 3;
@@ -93,16 +109,18 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .reviews {
+    padding-left: 271px;
+    padding-right: 52px;
     padding-top: 48px;
     max-width: 1250px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding-left: 270px;
     margin: auto;
     padding-bottom: 100px;
-    background-position: 100px top, 21px bottom;
     background-size: auto, 1050px;
+    background-position: 100px top, 21px bottom;
   }
 
   .reviews__title {
@@ -114,14 +132,14 @@
   }
 
   .reviews__button {
-    margin-right: 70px;
+    margin-right: 50px;
   }
 
   .reviews__item {
-    padding-right: 150px;
+    padding-right: 40px;
   }
 
   .reviews__description {
-    margin-bottom: 25px;
+    margin: 13px 113px 25px 4px;
   }
 }

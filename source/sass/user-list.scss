@@ -87,7 +87,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 80%;
+    width: 81%;
     flex-shrink: 0;
     flex-grow: 0;
   }
@@ -127,9 +127,14 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .user-list {
     order: 2;
     width: 40%;
+  }
+
+  .user-list__link svg {
+    left: 28px;
+    top: 36px;
   }
 }

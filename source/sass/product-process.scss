@@ -89,6 +89,10 @@
   margin-bottom: 24px;
 }
 
+.production-process__title span {
+  padding-left: 28px;
+}
+
 @media (min-width: 768px) {
   .production-process__button {
     width: 87%;
@@ -121,6 +125,7 @@
 
   .production-process__title span {
     margin-left: 33px;
+    padding-left: 0;
   }
 
   .production-process__description {
@@ -135,7 +140,7 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .production-process__description-wrap {
     border: none;
     order: 2;

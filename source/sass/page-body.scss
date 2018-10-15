@@ -1,0 +1,18 @@
+.page-body {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .page-body {
+   width: 768px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-body {
+  min-width: 1150px;
+  max-width: 1250px;
+  width: 100%;
+  }
+}
