@@ -2,7 +2,7 @@
   padding: 70px 37px 77px 38px;
   width: 100%;
   box-sizing: border-box;
-  background: $light-grey;
+  background: $white-two;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 27px;
   font-weight: bold;
@@ -42,16 +42,17 @@
 .page-main__description--form {
   margin-top: 21px;
   margin-bottom: 10px;
+
 }
 
 @media (min-width: 768px) {
   .page-main__title {
     background: #ececec;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-position: center bottom;
-    background-size: auto;
     background-repeat: repeat-x;
-    padding: 38px 37px 102px 38px;
+    background-position: 39px bottom;
+    background-size: 768px;
+    padding: 38px 37px 92px 38px;
     width: 100%;
     box-sizing: border-box;
     font-family: "OpenSans", "Arial", sans-serif;
@@ -69,11 +70,11 @@
   .page-main__description--form {
     padding: 0 37px 3px 38px;
     font-size: 17px;
-    margin-top: 51px;
     line-height: 30px;
     padding-left: 14px;
     padding-right: 10px;
     box-sizing: border-box;
+    margin-top: 61px;
   }
 }
 
@@ -81,6 +82,8 @@
   .page-main__title {
     padding: 35px 37px 119px 38px;
     font-size: 53px;
+    background-position: -6px bottom;
+    background-size: 1147px;
   }
 
   .page-main__title--form {
@@ -90,7 +93,7 @@
 
   .page-main__description--form {
     width: 733px;
-    padding-top: 50px;
     margin-left: 50px;
+    padding-top: 43px;
   }
 }

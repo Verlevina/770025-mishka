@@ -109,7 +109,9 @@
     margin-top: 20px;
     width: 100%;
     box-sizing: border-box;
-
+    background-position: 16px bottom;
+    background-repeat: repeat-x;
+    background-size: 778px;
   }
 
   .top-product__description {
@@ -201,6 +203,9 @@
     margin-top: 20px;
     width: 1050px;
     margin-right: auto;
+    background-repeat: repeat-x;
+    background-position: 78px bottom;
+    background-size: 1050px;
   }
 
   .top-product__title {

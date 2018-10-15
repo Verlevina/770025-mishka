@@ -10,7 +10,7 @@
 }
 
 .page-footer-wrap {
-  background: $light-grey;
+  background: $white-two;
   width: 100%;
   padding-top: 1px;
   margin-top: 36px;
@@ -23,6 +23,15 @@
 .page-footer__copyright {
   margin-top: 14px;
   margin-bottom: 36px;
+}
+
+.page-footer__logo-link[href]:hover path {
+  fill: #46c1ae;
+}
+
+.page-footer__logo-link[href]:active,
+.page-footer__logo-link[href]:focus {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
@@ -43,6 +52,7 @@
     display: block;
     margin-top: 18px;
     margin-right: 78px;
+    margin-left: 4px;
   }
 
   .page-footer__logo {
