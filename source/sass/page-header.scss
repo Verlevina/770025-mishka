@@ -1,6 +1,6 @@
 .page-header {
-  position: relative;
   @include flex-center;
+  position: relative;
   width: 100%;
   align-items: stretch;
   border-bottom: 1px solid $light-grey;
