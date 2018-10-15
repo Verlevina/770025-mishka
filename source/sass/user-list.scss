@@ -28,14 +28,35 @@
   font-weight: bold;
   line-height: 1.41;
 
+  &:hover {
+    svg {
+      opacity: 1;
+    }
+
+    path {
+      fill: $seafoam-blue;
+    }
+  }
+
+  &:active,
+  &:focus {
+    svg {
+      opacity: 0.3;
+    }
+    path {
+      fill: $seafoam-blue;
+    }
+  }
+
   &[href] {
     cursor: pointer;
 
-    &:hover {
+    &:hover .user-list__title {
       opacity: 0.6;
     }
 
-    &:active {
+    &:active .user-list__title,
+    &:focus .user-list__title {
       opacity: 0.3;
     }
   }
@@ -50,10 +71,11 @@
   top: 32px;
 }
 
+
 @media (min-width: 768px) {
   .user-list__link svg {
     left: 33px;
-    top: 36px;
+    top: 31px;
   }
 
   .user-list {
