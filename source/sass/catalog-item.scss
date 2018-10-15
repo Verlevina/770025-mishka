@@ -8,19 +8,11 @@
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-
-    .catalog-item__title {
-      color: rgba(0, 0, 0, 0.6);
-    }
   }
 
   &:focus,
   &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-
-    .catalog-item__title {
-      color: rgba(0, 0, 0, 0.3);
-    }
   }
 }
 
@@ -61,6 +53,7 @@
 }
 
 .catalog-item__price {
+  display: flex;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -73,6 +66,10 @@
   width: 100%;
   padding-top: 23px;
   padding-left: 0;
+}
+
+.catalog-item__button {
+  margin-left: auto;
 }
 
 @media (min-width: 768px) {
