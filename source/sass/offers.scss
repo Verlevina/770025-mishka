@@ -26,6 +26,8 @@
     flex-direction: row;
     justify-content: flex-start;
     order: 3;
+    flex-wrap: wrap;
+    flex-grow: 1;
   }
 
   .offers__item {
