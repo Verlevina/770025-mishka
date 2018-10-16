@@ -1,0 +1,23 @@
+.basket-button {
+  border: none;
+  background: transparent;
+  opacity: 0.2;
+  padding: 0;
+
+  &:hover {
+    opacity: 1;
+
+    path {
+      fill: $seafoam-blue;
+    }
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+
+    path {
+      fill: $seafoam-blue;
+    }
+  }
+}

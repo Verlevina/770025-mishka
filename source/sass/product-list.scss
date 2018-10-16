@@ -1,35 +1,72 @@
 .product-list {
   @include reset-list;
+  align-items: flex-end;
 }
 
-.product-list__item {
+.product-list__item a {
   background-color: $seafoam-blue;
   color: #ffffff;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #59d5bc;
+  }
+}
+
+.product-list__svg-wrap {
+  width: 100px;
+  text-align: center;
 }
 
 .product-list__link {
-  height: 104px;
-  box-sizing: border-box;
-  display: block;
-  padding: 28px 160px 28px 29px;
+  $paddingBottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+  padding: 23px 12px $paddingBottom 29px;
   text-decoration: none;
   color: #ffffff;
   text-align: left;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.01em;
   font-family: "OpenSans", "Arial", sans-serif;
   line-height: normal;
   vertical-align: middle;
   font-size: 19px;
   font-weight: bold;
+
+  &:hover {
+    padding-bottom: $paddingBottom + 5px;
+  }
+
+  &:active,
+  &:focus {
+    span,
+    svg {
+      opacity: 0.3;
+    }
+  }
 }
 
-.product-list__item--color:nth-child(even) {
-  background-color: #56c3b2;
+.product-list__item--color:nth-child(even) a {
+  background-color: $greeny-blue;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #46c1ae;
+  }
 }
+
+.product-list__link path {
+  fill: $blue-green;
+}
+
 
 @media (min-width: 768px) {
   .product-list {
     display: flex;
+    width: 668px;
     flex-direction: row;
     margin-right: auto;
     margin-left: auto;
@@ -37,24 +74,24 @@
 
   .product-list__item {
     width: 50%;
-    min-height: 127px;
   }
 
   .product-list__link {
-    padding: 28px 160px 28px 35px;
-    font-size: 22px;
+    $paddingBottom: 32px;
+    padding: 26px 7px $paddingBottom 35px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 0.01em;
     line-height: 30px;
+
+    &:hover {
+      padding-bottom: $paddingBottom + 5px;
+    }
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .product-list__link {
-    padding: 28px 320px 23px 35px;
-  }
-
-  .product-list__item {
-    min-height: 120px;
+    padding: 28px 7px 23px 35px;
   }
 }

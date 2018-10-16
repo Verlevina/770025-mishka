@@ -1,4 +1,3 @@
-
 @media (min-width: 768px) {
   .main-nav {
     order: 1;
@@ -6,9 +5,9 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .main-nav {
     order: 0;
-    width: 45%;
+    width: 40%;
   }
 }

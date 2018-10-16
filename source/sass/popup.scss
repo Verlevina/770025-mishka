@@ -1,0 +1,116 @@
+.popup {
+  display: none;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 10px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 5px 5px 10px 0 rgba(0, 1, 1, 0.25);
+}
+
+.popup span {
+  margin-bottom: 10px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+  color: $grey;
+}
+
+.popup__title {
+  margin-top: 0;
+  width: 100%;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.popup__radio:checked + label {
+  border-color: $seafoam-blue;
+}
+
+.popup__list {
+  @include reset-list;
+  margin: auto;
+  margin-top: 21px;
+  max-width: 326px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.popup__item {
+  label {
+    display: block;
+    padding: 20px 35px;
+    background: #ffffff;
+    border: 2px solid $grey;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.94;
+    letter-spacing: normal;
+    text-align: center;
+  }
+}
+
+.popup__button {
+  margin: auto;
+  margin-top: 31px;
+  background-color: $seafoam-blue;
+  border-color: $seafoam-blue;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .popup {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .popup__title {
+    font-size: 30px;
+  }
+
+  .popup label {
+    width: 112px;
+    height: 53px;
+    box-sizing: border-box;
+    font-size: 17px;
+  }
+
+  .popup span {
+    font-size: 17px;
+  }
+
+  .popup__list {
+    max-width: 390px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .popup {
+    width: 566px;
+    left: 50%;
+    margin-left: -283px;
+    top: 40%;
+  }
+}

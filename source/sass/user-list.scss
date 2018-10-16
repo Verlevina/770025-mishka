@@ -8,11 +8,17 @@
   display: inline-block;
   border-bottom: 1px solid $light-grey;
   text-align: center;
+  width: 100%;
+}
+
+.user-list__search {
+  overflow: hidden;
 }
 
 .user-list__link {
   display: inline-block;
-  padding: 32px 76px 31px 76px;
+  position: relative;
+  padding: 32px 40px 31px 40px;
   text-decoration: none;
   text-align: left;
   color: #000000;
@@ -21,9 +27,58 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 1.41;
+
+  &:hover {
+    svg {
+      opacity: 1;
+    }
+
+    path {
+      fill: $seafoam-blue;
+    }
+  }
+
+  &:active,
+  &:focus {
+    svg {
+      opacity: 0.3;
+    }
+
+    path {
+      fill: $seafoam-blue;
+    }
+  }
+
+  &[href] {
+    cursor: pointer;
+
+    &:hover .user-list__title {
+      opacity: 0.6;
+    }
+
+    &:active .user-list__title,
+    &:focus .user-list__title {
+      opacity: 0.3;
+    }
+  }
 }
 
+.user-list__link svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0.2;
+  left: 3px;
+  top: 32px;
+}
+
+
 @media (min-width: 768px) {
+  .user-list__link svg {
+    left: 30px;
+    top: 37px;
+  }
+
   .user-list {
     display: flex;
     align-items: stretch;
@@ -32,7 +87,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 80%;
+    width: 81%;
     flex-shrink: 0;
     flex-grow: 0;
   }
@@ -47,28 +102,19 @@
     border: none;
     border-left: 1px solid $light-grey;
     padding: 0;
+    width: auto;
   }
 
   .user-list__link {
-    font-size: 18px;
+    font-size: 17px;
     min-width: auto;
     letter-spacing: 0.01em;
-    padding: 32px 50px 32px 82px;
+    padding: 32px 48px 34px 82px;
     position: relative;
     flex-grow: 0;
     flex-shrink: 0;
   }
 
-  .user-list__link::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: url("../img/icon-cart.svg") no-repeat center;
-    left: 25px;
-    top: 30px;
-    opacity: 0.2;
-  }
 
   .user-list__search {
     font-size: 0;
@@ -77,19 +123,18 @@
     width: 83px;
     padding: 0;
     height: 100%;
-  }
-
-  .user-list__search::before {
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    left: 28px;
+    border-left: 1px solid $light-grey;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .user-list {
     order: 2;
-    width: 45%;
+    width: 40%;
+  }
+
+  .user-list__link svg {
+    left: 28px;
+    top: 36px;
   }
 }

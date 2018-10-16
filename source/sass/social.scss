@@ -4,4 +4,26 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social__link {
+  display: block;
+}
+
+.social__link:hover path {
+  fill: #46c1ae;
+}
+
+.social__link:active,
+.social__link:focus {
+  opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .social {
+    margin-top: 27px;
+    border-bottom: none;
+  }
 }

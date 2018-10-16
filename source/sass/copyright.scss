@@ -1,3 +1,33 @@
 .copyright__text {
   line-height: 34px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
+
+.copyright__link path {
+  fill: $seafoam-blue;
+}
+
+.copyright__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 191px;
+
+  &:hover path {
+    fill: #46c1ae;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
 }

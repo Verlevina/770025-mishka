@@ -1,8 +1,9 @@
 .contacts {
-  padding-top: 38px;
+  padding-top: 17px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .contacts__title {
@@ -24,6 +25,7 @@
 .contacts__adress {
   padding: 0 29px 0 29px;
   display: flex;
+  align-items: flex-start;
   flex-wrap: nowrap;
   justify-content: flex-start;
   min-width: 256px;
@@ -41,6 +43,7 @@
 
 .contacts__description-title {
   padding: 0;
+  flex-shrink: 0;
   margin: 0;
   margin-top: 27px;
 }
@@ -48,17 +51,33 @@
 .contacts__description {
   padding: 0;
   margin: 0;
-  padding-left: 30px;
+  margin-left: 30px;
   margin-top: 27px;
   width: 170px;
   box-sizing: border-box;
+  text-decoration: none;
+  color: $grey;
+}
+
+.contacts__description--mail {
+  border-bottom: 1px solid $seafoam-blue;
+  width: auto;
+
+  &:hover {
+    color: $seafoam-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
   position: relative;
-  width: 320px;
+  width: 100%;
   height: 457px;
   margin-top: 37px;
+  background-size: cover;
   background-color: $light-grey;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -89,7 +108,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 20px;
-    padding-bottom: 17px;
+    padding-bottom: 56px;
+  }
+
+  .contacts__email {
+    padding-left: 0;
   }
 
   .contacts__description-title {
@@ -97,10 +120,15 @@
   }
 
   .contacts__title {
-    font-size: 45px;
+    font-size: 43px;
     width: 100%;
     margin-top: 25px;
-    margin-left: 18px;
+    margin-left: 11px;
+    padding-left: 0;
+    background: url("../img/icon-flag.svg") center right no-repeat;
+    background-position-x: right;
+    padding-right: 0;
+    margin-right: 19px;
   }
 
   .contacts__map {
@@ -112,44 +140,95 @@
   }
 
   .contacts__wrap-top {
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 700px;
   }
 
   .contacts__description {
     padding: 0;
     margin: 0;
-    padding-left: 30px;
-    margin-top: 37px;
+    font-size: 17px;
     width: 250px;
     box-sizing: border-box;
+    margin-left: 24px;
+    margin-top: 37px;
+
+    span {
+      border-bottom: 1px solid $seafoam-blue;
+    }
   }
 
   .contacts__button {
-    margin-top: 55px;
+    margin-top: 52px;
     width: 230px;
     margin-right: auto;
     margin-left: auto;
   }
 
+  .contacts__wrap {
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+  }
+
   .contacts__adress,
   .contacts__email {
-    width: 50%;
+    width: 49%;
     box-sizing: border-box;
+    line-height: 1.9;
+    padding: 0 36px 0 5px;
+    font-size: 17px;
+  }
+
+  .contacts__description--mail {
+    width: auto;
   }
 }
 
-
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .contacts {
     flex-direction: row;
     justify-content: flex-start;
-    padding-top: 100px;
+    padding-top: 15px;
+    width: 1050px;
+    padding-bottom: 0;
+  }
+
+  .contacts__description {
+    margin-left: 26px;
+    line-height: 1.8;
+  }
+
+  .contacts__email {
+    padding-left: 174px;
+    width: 100%;
+    line-height: 1.8;
+    margin-bottom: -7px;
+    font-size: 17px;
+  }
+
+  .contacts__adress {
+    padding-left: 174px;
+    width: 100%;
+    font-size: 17px;
   }
 
   .contacts__title {
-    font-size: 55px;
+    letter-spacing: -0.01em;
+    font-size: 53px;
+    padding-left: 124px;
+    background-position: 17px 9px;
+    margin-left: 46px;
+  }
+
+  .contacts__wrap {
+    flex-direction: column;
+    padding-left: 0;
   }
 
   .contacts__map {
@@ -163,13 +242,25 @@
     order: 0;
     flex-direction: column;
     width: 50%;
+    margin-top: 83px;
+    box-sizing: border-box;
+    padding-left: 0;
   }
 
   .contacts__button {
     order: 2;
     margin-right: auto;
-    margin-left: 100px;
+    margin-left: 176px;
     position: relative;
-    top: -120px;
+    top: -108px;
+  }
+
+  .contacts__description--mail {
+    width: auto;
+    margin-top: 34px;
+  }
+
+  .contacts__description-title {
+    margin-top: 34px;
   }
 }

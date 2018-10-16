@@ -15,4 +15,15 @@
   letter-spacing: normal;
   color: $grey;
   background: transparent;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    background: $grey;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(256, 256, 256, 0.3);
+  }
 }

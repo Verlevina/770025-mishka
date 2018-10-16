@@ -7,9 +7,28 @@
   margin: 15px 0 15px 0;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 768px) {
+  .catalog {
+    margin-top: 27px;
+  }
+
+  .catalog__list {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog {
+    margin-top: 69px;
+    width: 1050px;
+  }
+
+
   .catalog__list {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
+    margin-top: 27px;
+    justify-content: space-between;
   }
 }

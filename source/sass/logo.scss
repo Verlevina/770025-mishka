@@ -6,5 +6,38 @@
 
 .logo {
   display: inline-block;
-  margin: 22px auto 22px auto;
+  margin: 21px auto 18px auto;
+
+  &[href] {
+    cursor: pointer;
+  }
+}
+
+.logo[href]:hover {
+  opacity: 0.6;
+}
+
+.logo[href]:active {
+  opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .logo__img {
+    margin-left: 47px;
+  }
+
+  .logo {
+    margin: 22px auto 15px auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .logo__img {
+    margin-left: 0;
+    border-bottom: none;
+  }
+
+  .logo {
+    margin: 8px auto 0 auto;
+  }
 }

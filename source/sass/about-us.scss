@@ -1,9 +1,5 @@
 .about-us {
-  padding: 14px 30px 15px 30px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-position: bottom;
-  background-repeat: repeat-x;
-  background-size: contain;
+  padding: 17px 30px 2px 30px;
 }
 
 .about-us__title {
@@ -20,11 +16,19 @@
 
 .about-us__list {
   @include reset-list;
+  margin-top: 30px;
+  padding-left: 4px;
+}
+
+.about-us__svg-wrapper {
+  width: 46px;
+  height: 34px;
+  text-align: center;
 }
 
 .about-us__item {
   position: relative;
-  margin-top: 25px;
+  margin-top: 33px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
@@ -34,22 +38,54 @@
   letter-spacing: normal;
   text-align: left;
   color: #000000;
+  padding-right: 0;
+  margin-bottom: 33px;
+}
+
+.about-us__item path {
+  fill: $seafoam-blue;
 }
 
 @media (min-width: 768px) {
   .about-us {
     background: none;
+    padding: 23px 30px 0 0;
+  }
+
+  .about-us__item--flower {
+    order: 0;
+  }
+
+  .about-us__item--money {
+    order: 2;
+  }
+
+  .about-us__item--heart {
+    order: 4;
+  }
+
+  .about-us__item--clew {
+    order: 1;
+  }
+
+  .about-us__item--rocket {
+    order: 3;
+  }
+
+  .about-us__item--present {
+    order: 5;
   }
 
   .about-us__title {
-    margin-top: 25px;
     margin-left: 15px;
-    font-size: 45px;
-    margin-bottom: 10px;
+    font-size: 43px;
+    margin-bottom: 37px;
+    margin-top: 21px;
   }
 
   .about-us__list {
     display: flex;
+    flex-direction: row;
     margin-top: 30px;
     flex-wrap: wrap;
   }
@@ -61,28 +97,32 @@
     padding: 15px;
     margin-bottom: 0;
     margin-top: 0;
+    padding-bottom: 27px;
   }
 
   .about-us__description {
+    margin-bottom: 18px;
     margin-top: 15px;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .about-us {
-    padding-top: 24px;
+    padding-top: 31px;
     background: none;
   }
 
   .about-us__title {
-    margin-left: 170px;
-    font-size: 55px;
+    margin-left: 186px;
+    font-size: 52px;
+    margin-top: 26px;
   }
 
   .about-us__list {
     margin-top: 28px;
-    margin-left: 100px;
-    flex-direction: column;
+    margin-left: 116px;
+    padding-bottom: 10px;
+    flex-direction: row;
     height: 500px;
     align-items: flex-start;
     justify-content: flex-start;
@@ -93,6 +133,7 @@
     width: 290px;
     margin-left: 60px;
     margin-right: 0;
+    padding-left: 9px;
   }
 
   .about-us__description {

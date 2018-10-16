@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .no-js .main-nav__toggle {
+    display: none;
+  }
+
+  .no-js .main-nav__list {
+    position: static;
+    display: flex;
+    min-height: 0;
+  }
+
+  .no-js .user-list {
+    position: static;
+    display: flex;
+    min-height: 0;
+  }
+}
