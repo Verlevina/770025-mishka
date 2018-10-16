@@ -111,12 +111,6 @@
     padding-bottom: 56px;
   }
 
-  .contacts__email,
-  .contacts__adress {
-    font-size: 17px;
-    line-height: 1.85;
-  }
-
   .contacts__email {
     padding-left: 0;
   }
@@ -188,6 +182,7 @@
     box-sizing: border-box;
     line-height: 1.9;
     padding: 0 36px 0 5px;
+    font-size: 17px;
   }
 
   .contacts__description--mail {
