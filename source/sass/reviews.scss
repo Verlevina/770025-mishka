@@ -106,6 +106,12 @@
     font-size: 17px;
     line-height: 1.8em;
   }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .reviews {
+      background: url("../img/review@2x.jpg") no-repeat, url("../img/bg-zigzag-line.svg") repeat-x 14px bottom;
+    }
+  }
 }
 
 @media (min-width: 1150px) {

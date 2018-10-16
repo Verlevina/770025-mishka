@@ -100,6 +100,13 @@
   background-repeat: no-repeat;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .contacts__map {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+}
+
+
 @media (min-width: 768px) {
   .contacts {
     justify-content: center;
@@ -188,6 +195,12 @@
   .contacts__description--mail {
     width: auto;
   }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: 1150px) {
@@ -262,5 +275,11 @@
 
   .contacts__description-title {
     margin-top: 34px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .contacts__map {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }
