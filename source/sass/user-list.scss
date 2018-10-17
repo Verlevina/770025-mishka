@@ -123,14 +123,14 @@
     width: 83px;
     padding: 0;
     height: 100%;
-    border-left: 1px solid $light-grey;
+    border-left: none;
   }
 }
 
 @media (min-width: 1150px) {
   .user-list {
     order: 2;
-    width: 40%;
+    width: 42%;
   }
 
   .user-list__link svg {

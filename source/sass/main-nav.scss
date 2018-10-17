@@ -2,12 +2,13 @@
   .main-nav {
     order: 1;
     width: 60%;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: 1150px) {
   .main-nav {
     order: 0;
-    width: 40%;
+    width: 42%;
   }
 }
