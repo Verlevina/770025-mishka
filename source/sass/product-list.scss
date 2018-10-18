@@ -35,8 +35,17 @@
   font-size: 19px;
   font-weight: bold;
 
+  svg {
+    fill: $blue-green;
+    opacity: 0.5;
+  }
+
   &:hover {
     padding-bottom: $paddingBottom + 5px;
+
+    svg {
+      opacity: 0.7;
+    }
   }
 
   &:active,
@@ -58,9 +67,6 @@
   }
 }
 
-.product-list__link path {
-  fill: $blue-green;
-}
 
 
 @media (min-width: 768px) {
