@@ -10,6 +10,9 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
+var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -43,6 +46,33 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
+gulp.task("spriteconst", function () {
+  return gulp.src(["source/img/icon-cart.svg", "source/img/icon-search.svg", "source/img/htmlacademy.svg", "source/img/logo-footer.svg", "source/img/icon-twitter.svg", "source/img/icon-fb.svg", "source/img/icon-insta.svg"])
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite-const.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("spriteindex", function () {
+  return gulp.src(["source/img/icon-*.svg", "source/img/htmlacademy.svg", "source/img/logo-footer.svg"])
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite-index.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("spritecatalog", function () {
+  return gulp.src(["source/img/icon-video.svg"])
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite-catalog.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
 
 gulp.task("images", function () {
   return gulp.src("source/img/*.{png,jpg,svg}")
@@ -53,4 +83,25 @@ gulp.task("images", function () {
     ]))
     .pipe(gulp.dest("source/img"));
 });
+
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("source"))
+});
+
 gulp.task("start", gulp.series("css", "server"));
+gulp.task("build", gulp.series("css", "spriteconst", "spritecatalog", "spriteindex", "html", "" ));
+
+gulp.task("copy", function () {
+  return gulp.src([
+    "source/fonts/*.{woff,woff2}",
+    "source/img/**",
+    "source/js/**"
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"))
+});

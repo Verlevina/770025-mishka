@@ -23,6 +23,20 @@
 .page-footer__copyright {
   margin-top: 14px;
   margin-bottom: 36px;
+
+  &:hover {
+    b {
+      opacity: 0.3;
+    }
+
+    svg {
+      fill: #46c1ae;
+    }
+  }
+}
+
+.page-footer__copyright svg {
+  fill: $seafoam-blue;
 }
 
 .page-footer__logo-link svg {
