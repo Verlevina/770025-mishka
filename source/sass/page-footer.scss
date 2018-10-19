@@ -25,7 +25,11 @@
   margin-bottom: 36px;
 }
 
-.page-footer__logo-link[href]:hover path {
+.page-footer__logo-link svg {
+  fill: #000000;
+}
+
+.page-footer__logo-link[href]:hover svg {
   fill: #46c1ae;
 }
 
