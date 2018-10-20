@@ -24,6 +24,10 @@
   width: 46px;
   height: 34px;
   text-align: center;
+
+  svg {
+    fill: $seafoam-blue;
+  }
 }
 
 .about-us__item {
@@ -42,9 +46,6 @@
   margin-bottom: 33px;
 }
 
-.about-us__item path {
-  fill: $seafoam-blue;
-}
 
 @media (min-width: 768px) {
   .about-us {
