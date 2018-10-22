@@ -181,6 +181,7 @@
     width: 100%;
     display: flex;
     box-sizing: border-box;
+    flex-wrap: wrap;
   }
 
   .contacts__adress,
@@ -258,6 +259,7 @@
     margin-top: 83px;
     box-sizing: border-box;
     padding-left: 0;
+    margin-bottom: 81px;
   }
 
   .contacts__button {
