@@ -1,9 +1,9 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Вероника Левитина](https://up.htmlacademy.ru/adaptive/15/user/770025).
-* Наставник: [Евгений Котов] (https://htmlacademy.ru/profile/id25083).
-
----
+* Наставник: [Мурат Баркинхоев] (https://htmlacademy.ru/profile/id186857).
+   
+   ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
