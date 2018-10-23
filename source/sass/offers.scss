@@ -20,7 +20,6 @@
 @media (min-width: 1150px) {
   .offers {
     @include reset-list;
-    margin-left: 31px;
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -33,6 +32,9 @@
   .offers__item {
     display: inline-block;
     text-align: center;
+  }
+  .offers__item:first-child {
+    margin-left: 31px;
   }
 
   .offers__link {

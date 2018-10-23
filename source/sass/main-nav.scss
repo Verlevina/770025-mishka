@@ -4,11 +4,19 @@
     width: 60%;
     flex-wrap: wrap;
   }
+
+  .main-nav__color {
+    background: $light-grey;
+  }
 }
 
 @media (min-width: 1150px) {
   .main-nav {
     order: 0;
     width: 42%;
+  }
+
+  .main-nav__color {
+    background: none;
   }
 }

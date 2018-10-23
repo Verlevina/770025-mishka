@@ -22,6 +22,10 @@
     width: 19%;
     border-bottom: 1px solid $light-grey;
   }
+
+  .page-header__bottom-grey {
+    background: $light-grey;
+  }
 }
 
 @media (min-width: 1150px) {

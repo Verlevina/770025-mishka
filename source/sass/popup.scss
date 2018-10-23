@@ -6,7 +6,7 @@
   position: fixed;
   left: 0;
   top: 10px;
-  padding: 30px;
+  padding: 45px;
   background: #ffffff;
   border: 1px solid #c6c6c6;
   box-shadow: 5px 5px 10px 0 rgba(0, 1, 1, 0.25);
@@ -15,7 +15,7 @@
 .popup span {
   margin-bottom: 10px;
   font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -27,6 +27,7 @@
 
 .popup__title {
   margin-top: 0;
+  margin-bottom: 21px;
   width: 100%;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 25px;
@@ -47,19 +48,20 @@
 .popup__list {
   @include reset-list;
   margin: auto;
-  margin-top: 21px;
-  max-width: 326px;
+  margin-top: 19px;
+  max-width: 353px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .popup__item {
   label {
     display: block;
-    padding: 20px 35px;
+    padding: 16px 35px;
     background: #ffffff;
-    border: 2px solid $grey;
+    border: 2px solid $light-grey;
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 17px;
     font-weight: bold;
@@ -74,6 +76,7 @@
 .popup__button {
   margin: auto;
   margin-top: 31px;
+  width: 350px;
   background-color: $seafoam-blue;
   border-color: $seafoam-blue;
   color: #ffffff;
@@ -91,7 +94,7 @@
   }
 
   .popup label {
-    width: 112px;
+    width: 114px;
     height: 53px;
     box-sizing: border-box;
     font-size: 17px;
@@ -102,7 +105,7 @@
   }
 
   .popup__list {
-    max-width: 390px;
+    max-width: 353px;
   }
 }
 
