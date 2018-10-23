@@ -196,4 +196,9 @@
   .production-process__button {
     width: 67%;
   }
+
+  _:-ms-fullscreen,
+  :root .production-process {
+    height: 457px;
+  }
 }
