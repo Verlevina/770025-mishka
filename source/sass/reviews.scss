@@ -118,15 +118,14 @@
 
 @media (min-width: 1150px) {
   .reviews {
-    padding-left: 271px;
-    padding-right: 52px;
+    padding-left: 221px;
+    padding-right: 0;
     padding-top: 48px;
-    max-width: 1250px;
     box-sizing: border-box;
     margin: auto;
     padding-bottom: 100px;
     background-size: auto, 1050px;
-    background-position: 100px top, 21px bottom;
+    background-position: 50px top, 21px bottom;
   }
 
   .reviews__title {
@@ -146,7 +145,8 @@
   }
 
   .reviews__description {
-    margin: 13px 113px 25px 4px;
+    margin: 16px 113px 24px 4px;
+    line-height: 1.8em;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

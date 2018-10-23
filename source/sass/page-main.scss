@@ -41,9 +41,13 @@
 
 .page-main__description--form {
   margin-top: 21px;
-  box-sizing: border-box;
   margin-bottom: 10px;
+}
+
+:-ms-fullscreen,
+:root .page-main__description--form {
   width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
@@ -78,6 +82,11 @@
     margin-top: 61px;
     width: auto;
   }
+
+  :-ms-fullscreen,
+  :root .page-main__description--form {
+    width: 612px;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -97,5 +106,10 @@
     width: 733px;
     margin-left: 50px;
     padding-top: 43px;
+  }
+
+  :-ms-fullscreen,
+  :root .page-main__description--form {
+    width: 733px;
   }
 }

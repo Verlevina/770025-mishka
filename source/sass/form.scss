@@ -88,16 +88,16 @@
   &:checked + label::after,
   &:hover + label::after,
   &:focus + label::after {
-    left: 16px;
+    left: 12px;
     content: "";
     position: absolute;
     display: inline-block;
-    width: 22px;
-    height: 21px;
+    width: 16px;
+    height: 16px;
     border: #63d1bb;
     background: #63d1bb;
     border-radius: 50%;
-    top: 16px;
+    top: 12px;
   }
 
   &:hover + label::before {
@@ -290,6 +290,19 @@
     width: 217.4px;
     position: absolute;
     padding-left: 52px;
+  }
+
+
+  .form__radio {
+    &:checked + label::after,
+    &:hover + label::after,
+    &:focus + label::after {
+
+      left: 16px;
+      width: 22px;
+      height: 21px;
+      top: 16px;
+    }
   }
 
   .form__list {
