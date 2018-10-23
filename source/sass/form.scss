@@ -64,6 +64,7 @@
 
 .form__radio + label {
   line-height: 30px;
+  position: relative;
 
   &::before {
     content: "";
@@ -76,13 +77,23 @@
 }
 
 .form__radio {
-  &:checked + label::before {
-    background: radial-gradient($seafoam-blue, $seafoam-blue 30%, transparent 30%, transparent);
+  &:checked + label::after,
+  &:hover + label::after,
+  &:focus + label::after {
+    left: 16px;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 21px;
+    border: #63d1bb;
+    background: #63d1bb;
+    border-radius: 50%;
+    top: 16px;
   }
 
   &:hover + label::before {
     border-color: #62d1ba;
-    background: radial-gradient($seafoam-blue, $seafoam-blue 30%, transparent 30%, transparent);
   }
 
   &:focus + label::before,
